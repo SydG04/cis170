@@ -1,0 +1,513 @@
+body {
+    background-color: #FFEECC;
+    padding:0;
+    margin: 0;
+
+}
+
+#logo {
+    margin: 0;
+}
+
+.logo {
+    color: #432818;
+}
+
+#CurrentDeal {
+    background-color: #432818;
+    color: #FFEECC;
+    margin: 0;
+    font-size: 22px;
+    padding: 8px;
+    text-align: center;
+}
+
+.navbar {
+    position: relative;
+    background: #99582A;
+}
+
+#navlist {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background: #99582A;
+}
+
+#navlist li {
+    flex: auto;
+    text-align: center;
+    padding: 0.3em;
+    font-size: 30px;
+    color: #FFE6A7;
+}
+
+
+a {
+   color: #FFE6A7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #6F1D1B;
+    cursor:pointer;
+}
+
+#join-today { 
+    color: #FFE6A7;
+    text-decoration: underline;
+}
+
+#join-today:hover { 
+    cursor: pointer;
+}
+
+.intro{
+    display: flex;
+}
+
+.welcome_image {
+  flex:auto;
+    width: 50%;
+}
+
+.reading_book {
+    float: left;
+    display: block;
+    margin: 50px 50px 50px 50px;
+    width: 100%;
+}
+
+.welcome_text {
+    flex: auto;
+    width: 50%;
+ margin: 52px 50px 50px 100px;
+    /*top right bottom left*/
+    text-align: center;
+}
+
+h1 {
+    color: #432818;
+    font-size:4em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #432818;
+    font-size:3em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.welcome_para {
+    text-align:center;
+    color: #432818;
+    font-size: 25px;
+}
+
+#join-now {
+    background-color: #6F1D1B;
+    color: #FFEECC;
+    border: none;
+    font-size: 20px;
+    padding: 9px;
+    border-radius: 5px;
+    height: 60px;
+    width: 125px;
+    text-align: center;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+#join-now:hover{
+    text-align: center;
+    cursor: pointer;
+    background: #B52E2C;
+    transition: 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#log-in-homepage{
+    background-color: #FFEECC;
+    color: #6F1D1B;
+    font-size: 20px;
+    padding: 9px;
+    border: 2px solid #6F1D1B;
+    border-radius: 5px;
+    height: 60px;
+    width: 125px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+#log-in-homepage:hover{
+    text-align: center;
+    cursor: pointer;
+    color: #B52E2C;
+    border-color: #B52E2C;
+    transition: 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+#second-h1 {
+    font-size: 4em;
+    text-align: center; 
+}
+
+#a-note{
+    text-align: center;
+    font-size: 25px;
+    color: #432818;
+}
+
+.flex-container {
+   display: flex;
+    justify-content: space-evenly;
+}
+
+
+#a-note-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    column-gap: 6em;
+    font-size: 30px;
+}
+
+.post-it {
+    list-style: none;
+}
+
+.post-it::before {
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 29px;
+    background-image: url(Images/post-it.svg);
+}
+
+.bookmark {
+    list-style: none;
+}
+
+.bookmark::before{
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 32px;
+    background-image: url(Images/bookmark-bar-icon.svg);
+    
+}
+
+
+.highlighter {
+   list-style: none;
+}
+
+.highlighter::before {
+    content: '';
+    display: inline-block;
+    height: 28px;
+    width: 31px;
+    background-image: url(Images/highlight-marker-icon.svg);
+}
+
+.pen {
+    list-style: none;
+}
+
+.pen::before{
+   content: '';
+    display: inline-block;
+    height: 32px;
+    width: 30px;
+    background-image: url(Images/pen-tool-icon.svg);
+}
+
+@media screen and (max-width: 700px) {
+  .welcome_image {
+  flex:none;
+    width: 80%;
+    }
+    
+  .welcome_text {
+    flex: none;
+    width: 100%;
+ margin: 50px 0px 80px 0px;
+    /*top right bottom left*/
+    text-align: center;
+    }
+    
+    .welcome_para {
+    text-align:center;
+    color: #432818;
+    font-size: 25px;
+    margin-right: 2px;
+    font-family: sans-serif;
+}
+
+    
+    .intro {
+    display: block;
+    }
+    
+    #navlist {
+    list-style: none;
+   display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background: #99582A;
+}
+    #a-note-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+    font-size: 30px;
+}
+
+}
+
+
+/* Login Page */
+.login-box {
+    display: flex;
+}
+
+.login-image{
+  flex: auto;
+    width: 50%;
+    margin: 30px;
+}
+
+.stack_of_books {
+    width: 80%;
+    margin: inherit;
+}
+
+.login {
+    float: right;
+    border: solid #000000 1px;
+    border-radius: 5px;
+    width: 50%;
+    margin: 25px 50px 0px 20px;
+    /*top right bottom left*/
+     height:450px;
+}
+
+/*login form*/
+.welcome-back {
+    font-size: 2em;
+    margin-bottom: 10%;
+}
+
+input[type="email"], input[type="password"] {
+   border: 1px solid #432818; 
+    border-radius: 2px;
+    width: 88%;
+    height: 44px;
+    margin-left: 5%;
+    background-color: transparent;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+   outline: 1px solid #432818;
+    
+}
+
+::placeholder {
+    color: slategrey;
+}
+
+input[type="email"] {
+    margin-bottom: 5%;
+}
+
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #432818;
+    position: relative;
+    vertical-align: middle;
+} 
+/* Fix later
+input[type='checkbox']:checked:before {
+     border: #1C4CBD;
+     background-color: #1C4CBD;
+}
+
+input[type='checkbox']:after {
+     border: yellow;
+     background-color: black;
+}
+*/
+
+.not-a-member, .remember-me {
+    color: #432818;
+}
+
+.not-a-member {
+   text-align: center;
+    padding-top: 1%;
+    font-size: 20px;
+}
+
+.remember-me {
+    margin-left: 5%;
+    font-size: 20px;
+}
+
+u {
+    font-weight: bold;
+    color: #6F1D1B;
+    cursor: pointer;
+}
+
+u:hover {
+    cursor:pointer;
+    color: #B52E2C;
+}
+
+#log-in-loginpage {
+    margin-left: 5%;
+    width: 88%;
+    height: 44px;
+    background-color: #6F1D1B;
+    border: none;
+    border-radius: 2px;
+    color: #FFEECC;
+    font-weight: bold;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+
+
+#log-in-loginpage:hover{
+    text-align: center;
+    cursor: pointer;
+    background-color: #B52E2C;
+    transition: 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+@media screen and (max-width: 700px) {
+.login-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+    
+.login {
+    width: 90%;
+    margin: auto;
+}
+
+.login-image{
+    width: 80%;
+    margin: auto;
+}
+ .stack_of_books {
+    display: block;
+    margin: auto;
+}
+    
+}
+
+/*Buy a book kit*/
+.subscribe-plans{
+    display:flex;
+    box-sizing: border-box;
+    column-gap: 5em;
+    justify-content: center;
+    padding: inherit;
+    align-items: center;
+}
+
+#subscribe-text {
+    text-align: center;
+    font-size: 25px;
+    color: #432818;
+    margin-top: 10px;
+}
+
+.price {
+  font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/*give class*/
+.sub-button {
+    display: block;
+    border: none;
+    color: #FFE6A7;
+    background: #6F1D1B;
+    padding: 12px 30px;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    margin: auto;
+    margin-bottom: 8px;
+}
+
+.sub-button:hover {
+    background-color: #B52E2C;
+     transition: 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+
+.book-sub-heading {
+    margin: auto;
+   color: #FFE6A7; 
+    background-color: #432818;
+    font-weight: normal;
+    font-size: 2.5em;
+   padding: 10px 50px 10px 50px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+#book1 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+} 
+
+
+#book2 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+#book3 {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+/*help with instea dof margins to center, I need something else*/
+@media screen and (max-width: 700px) {
+.subscribe-plans{
+    display: block;
+}
+
+.sub-button {
+    border: none;
+    color: #FFE6A7;
+    background: #6F1D1B;
+    padding: 12px 30px;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+}
+ 
+}
