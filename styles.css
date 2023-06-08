@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body {
     background-color: #FFEECC;
     padding:0;
@@ -247,7 +249,6 @@ h2 {
     color: #432818;
     font-size: 25px;
     margin-right: 2px;
-    font-family: sans-serif;
 }
 
     
@@ -291,6 +292,9 @@ h2 {
 }
 
 .login {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
     float: right;
     border: solid #000000 1px;
     border-radius: 5px;
@@ -329,26 +333,65 @@ input[type="email"] {
 }
 
 
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    border: 1px solid #432818;
+/* Hide the browser's default checkbox */
+ .check-container input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Style the custom checkbox container */
+  .check-container {
     position: relative;
+    padding-left: 25px; /* Adjust as needed */
+    margin-left: 5%;
+    cursor: pointer;
     vertical-align: middle;
-} 
-/* Fix later
-input[type='checkbox']:checked:before {
-     border: #1C4CBD;
-     background-color: #1C4CBD;
+  }
+  
+  /* Style the custom checkbox */
+  .check-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px; /* Adjust the size of the checkbox */
+    height: 18px; /* Adjust the size of the checkbox */
+    border: 1px solid #432818; /* Adjust the checkbox border color */
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+/* Style the checked custom checkbox */
+  .check-container input[type="checkbox"]:checked + .checkmark::before {
+    background-color: transparent; /* Adjust the checked checkbox color */
+  }
+  
+  /* Style the checkmark inside the custom checkbox */
+  .check-container .checkmark::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 5px; /* Adjust the size of the checkmark */
+    height: 15px; /* Adjust the size of the checkmark */
+    border: solid black; /* Adjust the checkmark color */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  
+  /* Show the checkmark for the checked custom checkbox */
+  .check-container input[type="checkbox"]:checked ~ .checkmark::after {
+    opacity: 1;
+  }
+  
+
+.remember-me-container {
+    color: #432818;
+    margin: 20px 20px 20px 0px;
+    font-size: 1.25em;
 }
 
-input[type='checkbox']:after {
-     border: yellow;
-     background-color: black;
-}
-*/
-
-.not-a-member, .remember-me {
+.not-a-member {
     color: #432818;
 }
 
@@ -358,10 +401,6 @@ input[type='checkbox']:after {
     font-size: 20px;
 }
 
-.remember-me {
-    margin-left: 5%;
-    font-size: 20px;
-}
 
 u {
     font-weight: bold;
@@ -374,7 +413,7 @@ u:hover {
     color: #B52E2C;
 }
 
-#log-in-loginpage {
+#loginpage-button {
     margin-left: 5%;
     width: 88%;
     height: 44px;
@@ -388,7 +427,7 @@ u:hover {
 }
 
 
-#log-in-loginpage:hover{
+#loginpage-button:hover {
     text-align: center;
     cursor: pointer;
     background-color: #B52E2C;
