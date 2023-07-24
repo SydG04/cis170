@@ -533,7 +533,7 @@ u:hover {
     border-radius: 5px;
 }
 
-/*help with instea dof margins to center, I need something else*/
+/*help with instead of margins to center, I need something else*/
 @media screen and (max-width: 700px) {
 .subscribe-plans{
     display: block;
@@ -549,4 +549,15 @@ u:hover {
     cursor: pointer;
 }
  
+}
+
+/*All Books page */
+
+.allbooks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Books {
+    height: 50%;
 }
