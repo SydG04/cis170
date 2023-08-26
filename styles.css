@@ -1,3 +1,33 @@
+:root {
+    --color-classic: #432818;
+    --color-ya: #BB9457;
+    --color-romance: #9A2A2A;
+    --color-fantasy: #99582A;
+    --color-scifi: #E1C16E;
+    --color-mystery: #4A0404;
+    --color-thriller: #6F1D1B;
+    --color-historical: #EADDCA;
+    --color-contemporary: #EADDCA;
+    --color-literary: #EADDCA;
+    --color-adventure: #C19A6B;
+    --color-horror: #800020;
+    --color-dystopian: #8B0000;
+    --color-graphic: #99582A;
+    --color-memoir: #966919;
+    --color-biography: #966919;
+    --color-selfhelp: #EADDCA;
+    --color-nonfiction: #C04000;
+    --color-poetry: #F5DEB3;
+    --color-humor: #A95C68;
+    --color-suspense: #800020;
+    --color-crime: #BB9457;
+    --color-paranormal: #CD7F32;
+    --color-science: #808000;
+    --color-philosophy: #483C32;
+    --color-satire: #7B3F00;
+  }
+  
+
 body {
     background-color: #FFEECC;
     padding:0;
@@ -580,15 +610,76 @@ div {
     width: 100%
 }
 
+.label_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 
-.label classic{
+.label {
     color: white;
-    padding: 8px;
+    align-items: center;
+    padding: 0 6px 1px;
+    min-height: 20px;
+    border-radius: 3px;
+    line-height: 1.3rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-size: 1em;
 }
 
 .classic {
-    background-color: #432818;
+    background-color: var(--color-classic); 
+    color: white;
+}
+
+.dystopian {
+    background-color: var(--color-dystopian);
+    color: white;
+}
+
+.sci-fi {
+    background-color: var(--color-scifi);
+    color: black;
+}
+
+.humor {
+    background-color: var(--color-humor);
+    color: white;
+}
+
+.thriller {
+    background-color: var(--color-thriller);
+}
+
+.satire {
+    background-color: var(--color-satire);
+    color: white;
+}
+
+.mystery{
+    background-color: var(--color-mystery);
+    color: white;
+}
+
+.romance {
+    background-color: var(--color-romance);
+    color: white;
+}
+
+.ya {
+    background-color: var(--color-ya);
+    color: black;
+}
+
+.gn {
+    background-color: var(--color-graphic);
+    color: white;
+}
+
+.memoir {
+    background-color: var(--color-memoir);
     color: white;
 }
 
@@ -598,11 +689,10 @@ div {
     line-height: 1.5;
 }
 
-
 h4 {
     font-size: 18px;
     font-weight: bold;
-    margin: 25px 5px 10px;
+    margin: 20px 5px;
 }
 
 .thebook_info_para {
@@ -611,9 +701,41 @@ h4 {
     line-height: 1.5;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1440px) {
+    .allbooks {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media screen and (max-width: 970px) {
+    h1 {
+        font-size: 2.9rem;
+    }
+
+    .allbooks {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 2.9rem;
+    }
+
     .allbooks {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-    
+
+@media screen and (max-width: 560px) {
+    .allbooks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .allbooks {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/*use goodreads or google api to fetch reviews for the book*/
