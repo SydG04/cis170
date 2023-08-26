@@ -702,6 +702,11 @@ h4 {
 }
 
 @media screen and (max-width: 1440px) {
+    
+    h1 {
+        font-size: 2.9rem;
+    }
+
     .allbooks {
         grid-template-columns: repeat(5, 1fr);
     }
