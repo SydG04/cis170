@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 :root {
     --color-classic: #432818;
     --color-ya: #BB9457;
@@ -113,7 +115,7 @@ a:hover {
 .welcome_text {
     flex: auto;
     width: 50%;
- margin: 52px 50px 50px 100px;
+    margin: 52px 50px 50px 100px;
     /*top right bottom left*/
     text-align: center;
 }
@@ -138,7 +140,12 @@ h2 {
     font-size: 25px;
 }
 
-#join-now {
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#join-now-btn {
     background-color: #6F1D1B;
     color: #FFEECC;
     border: none;
@@ -152,7 +159,7 @@ h2 {
     transition: 0.3s;
 }
 
-#join-now:hover{
+#join-now-btn:hover{
     text-align: center;
     cursor: pointer;
     background: #B52E2C;
@@ -160,7 +167,7 @@ h2 {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-#log-in-homepage{
+#log-in-btn{
     background-color: #FFEECC;
     color: #6F1D1B;
     font-size: 20px;
@@ -173,7 +180,7 @@ h2 {
     transition: 0.3s;
 }
 
-#log-in-homepage:hover{
+#log-in-btn:hover{
     text-align: center;
     cursor: pointer;
     color: #B52E2C;
@@ -258,9 +265,47 @@ h2 {
     background-image: url(Images/pen-tool-icon.svg);
 }
 
+.footer {
+    background-color: #99582A;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Style for the quick links */
+.footer a {
+    text-decoration: none;
+    padding: 0 10px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Style for the quote */
+.quote {
+    font-style: italic;
+    margin: 20px 5px;
+    color: beige;
+    font-family: Inter;
+    font-weight: 100;
+}
+
+.copyright {
+    background-color: #432818;
+    height: 50px;
+    display: flex; /* Make the container a flex container */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Center vertically */
+}
+
+.copyright p {
+   margin: 0;
+   font-family: Inter;
+   font-weight: 100;
+   color: #FFE6A7;
+}
+
 @media screen and (max-width: 700px) {
   .welcome_image {
-  flex:none;
+    flex:none;
     width: 80%;
     }
     
@@ -279,19 +324,19 @@ h2 {
     margin-right: 2px;
 }
 
-    
     .intro {
     display: block;
     }
     
     #navlist {
     list-style: none;
-   display: flex;
+    display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
     background: #99582A;
 }
+
     #a-note-list {
     list-style: none;
     display: grid;
@@ -322,7 +367,6 @@ h2 {
 .login {
     display: flex;
     flex-direction: column;
-    align-items: left;
     float: right;
     border: solid #000000 1px;
     border-radius: 5px;
@@ -332,13 +376,25 @@ h2 {
      height:450px;
 }
 
+.signup {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    border: solid #000000 1px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 25px 50px 25px 20px;
+    /*top right bottom left*/
+    height: 575px;
+}
+
 /*login form*/
-.welcome-back {
+.welcome-back, .signup-heading {
     font-size: 2em;
     margin-bottom: 10%;
 }
 
-input[type="email"], input[type="password"] {
+input[type = "text"], input[type = "email"], input[type = "password"] {
    border: 1px solid #432818; 
     border-radius: 2px;
     width: 88%;
@@ -347,7 +403,7 @@ input[type="email"], input[type="password"] {
     background-color: transparent;
 }
 
-input[type="email"]:focus, input[type="password"]:focus {
+input[type = "text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
    outline: 1px solid #432818;
     
 }
@@ -356,7 +412,7 @@ input[type="email"]:focus, input[type="password"]:focus {
     color: slategrey;
 }
 
-input[type="email"] {
+input[type = "text"], input[type="email"] {
     margin-bottom: 5%;
 }
 
@@ -421,22 +477,19 @@ input[type="email"] {
 
 .not-a-member {
     color: #432818;
-}
-
-.not-a-member {
-   text-align: center;
+    text-align: center;
     padding-top: 1%;
     font-size: 20px;
 }
 
 
-u {
+.sign-up-link {
     font-weight: bold;
     color: #6F1D1B;
     cursor: pointer;
 }
 
-u:hover {
+.sign-up-link:hover {
     cursor:pointer;
     color: #B52E2C;
 }
@@ -473,7 +526,7 @@ u:hover {
     
 .login {
     width: 90%;
-    margin: auto;
+    margin:  auto auto 15px auto;
 }
 
 .login-image{
@@ -488,13 +541,14 @@ u:hover {
 }
 
 /*Buy a book kit*/
-.subscribe-plans{
+.subscribe-plans {
     display:flex;
     box-sizing: border-box;
     column-gap: 5em;
     justify-content: center;
     padding: inherit;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 #subscribe-text {
@@ -565,6 +619,7 @@ u:hover {
 @media screen and (max-width: 700px) {
 .subscribe-plans {
     display: block;
+
 }
 
 .sub-button {
@@ -744,3 +799,12 @@ h4 {
 }
 
 /*use goodreads or google api to fetch reviews for the book*/
+
+/*Privacy Policy*/
+
+.privacy-policy-body p, .terms-body p, .accessibility-body p {
+    color: #432818;
+    font-size: 20px;
+    text-align: left;
+    margin: 10px;
+}

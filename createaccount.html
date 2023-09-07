@@ -7,7 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <header>
-        <h1 id=logo><a href="index.html" class="logo">KitBook</a></h1>
+        <h1 id=logo>
+            <a href="index.html" class="logo">KitBook</a>
+        </h1>
         <p id="CurrentDeal">
           Get Your First Box for 30% with the code <strong>TBR</strong> at checkout. <a href="login.html" id=join-today>Join Today</a>
         </p>
@@ -22,23 +24,42 @@
       </header>
     <body>
         <main>
-            <section class="login-box">
+            <section class="login-box"> <!--rename to sign-up box-->
                 <!--<section class="image-box">-->
                     <aside class="login-image">
                         <img src="Images/Stack%20of%20books.png" alt="Stack of books" class="stack_of_books">
                     </aside>
                <!-- </section> -->
-                <section class="login">
+              <form id="signup-form">
+                <section class="signup"> <!--rename to signup-->
                     <aside>
-                        <h1 class="welcome-back">
-                        WELCOME BACK!</h1>
+                        <h1 class="signup-heading"> <!--rename to welcome!-->
+                        BECOME A MEMBER!</h1>
+                        <input required
+                        type="text"
+                        id="first-name"
+                        name="first-name"
+                        placeholder="First Name"
+                        />
+                        
+
+                        <input required
+                        type="text"
+                        id="last-name"
+                        name="last-name"
+                        placeholder="Last Name"
+                        />
+
                         <input type="email" 
+                        id = "email"
                         placeholder="Email Address" 
                         required>
 
                         <input type="password" 
+                        id ="password"
                         placeholder="Password" 
                         required>
+
                     <section class="remember-me-container">
                         <label class="check-container">
                             <input type="checkbox" class="remember-me"> 
@@ -46,13 +67,12 @@
                             <span class="checkmark"></span>
                         </label>
                     </section>
-
                         <button id="loginpage-button">
                             Login
                         </button>
-                        <p class="not-a-member">Not a member? <u><a href = "createaccount.html" class="sign-up-link">Sign Up</a></u></p>
                     </aside>
                 </section>
+              </form>
             </section>
         </main>
         <footer class="footer">
