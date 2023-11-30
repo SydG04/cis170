@@ -1,96 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>KitBook</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <header>
-        <h1 id=logo>
-            <a href="index.html" class="logo">KitBook</a>
-        </h1>
-        <p id="CurrentDeal">
-          Get Your First Box for 30% with the code <strong>TBR</strong> at checkout. <a href="login.html" id=join-today>Join Today</a>
+  <head>
+    <title>KitBook</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <header>
+    <h1 id="logo">
+      <a href="index.html" class="logo">KitBook</a>
+    </h1>
+    <p id="CurrentDeal">
+      Get Your First Box for 30% with the code <strong>TBR</strong> at checkout.
+      <a href="login.html" id="join-today">Join Today</a>
+    </p>
+    <nav class="navbar">
+      <ul id="navlist">
+        <li><a href="allbooks.html">All Books</a></li>
+        <li><a href="Buy-a-book-kit.html">Buy a Book Kit</a></li>
+        <li><a href="#">Our Company</a></li>
+        <li><a href="login.html">Log-In/Sign-Up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>  
+    <main>
+      <section class="signup-box">
+        <!--rename to sign-up box-->
+        <!--<section class="image-box">-->
+        <aside class="signup-image">
+          <img
+            src="Images/Stack%20of%20books.png"
+            alt="Stack of books"
+            class="stack_of_books"
+          />
+        </aside>
+        <!-- </section> -->
+        <form id="signup-form" method="get">
+          <section class="signup">
+            <aside>
+              <h1 class="signup-heading">BECOME A MEMBER!</h1>
+              <label for="fname">
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="First Name"
+                  required
+                />
+              </label>
+
+              <label for="lname">
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  placeholder="Last Name"
+                  required
+                />
+              </label>
+
+              <label for="email">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </label>
+
+              <label for="password">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Password"
+                  required
+                />
+              </label>
+              <ul>
+                <li id="length" class="invalid">At least 8 characters</li>
+                <li id="uppercase" class="invalid">At least one uppercase letter</li>
+                <li id="lowercase" class="invalid">At least one lowercase letter</li>
+                <li id="number" class="invalid">At least one number</li>
+                <li id="special" class="invalid">At least one special character</li>
+              </ul>
+
+              <section class="remember-me-container">
+                <label class="check-container">
+                  <input type="checkbox" class="remember-me" />
+                  Remember Me
+                  <span class="checkmark"></span>
+                </label>
+              </section>
+              <input type="submit" id="CA-button" value="Create Account" />
+            </aside>
+            <p id="status"></p>
+            <script src="validate.js"></script>
+          </section>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <!-- Quick Links -->
+      <a href="accessibility.html">Accessibility Statement</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+
+      <!-- Quote -->
+      <div class="quote">
+        <p>
+          "A room without books is like a body without a soul." - Marcus Tullius
+          Cicero
         </p>
-        <nav class="navbar">
-            <ul id="navlist">
-                <li><a href="allbooks.html">All Books</a></li>
-                <li><a href="Buy-a-book-kit.html">Buy a Book Kit</a></li>
-                <li><a href="#">Our Company</a></li>
-                <li><a href="login.html">Log-In/Sign-Up</a></li>
-            </ul>
-        </nav>
-      </header>
-    <body>
-        <main>
-            <section class="login-box"> <!--rename to sign-up box-->
-                <!--<section class="image-box">-->
-                    <aside class="login-image">
-                        <img src="Images/Stack%20of%20books.png" alt="Stack of books" class="stack_of_books">
-                    </aside>
-               <!-- </section> -->
-              <form id="signup-form">
-                <section class="signup"> <!--rename to signup-->
-                    <aside>
-                        <h1 class="signup-heading"> <!--rename to welcome!-->
-                        BECOME A MEMBER!</h1>
-                        <input required
-                        type="text"
-                        id="first-name"
-                        name="first-name"
-                        placeholder="First Name"
-                        />
-                        
+      </div>
+      <!--maybe try to have it change quotes randomly-->
 
-                        <input required
-                        type="text"
-                        id="last-name"
-                        name="last-name"
-                        placeholder="Last Name"
-                        />
-
-                        <input type="email" 
-                        id = "email"
-                        placeholder="Email Address" 
-                        required>
-
-                        <input type="password" 
-                        id ="password"
-                        placeholder="Password" 
-                        required>
-
-                    <section class="remember-me-container">
-                        <label class="check-container">
-                            <input type="checkbox" class="remember-me"> 
-                            Remember Me
-                            <span class="checkmark"></span>
-                        </label>
-                    </section>
-                        <button id="loginpage-button">
-                            Login
-                        </button>
-                    </aside>
-                </section>
-              </form>
-            </section>
-        </main>
-        <footer class="footer">
-            <!-- Quick Links -->
-            <a href="accessibility.html">Accessibility Statement</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="terms.html">Terms of Use</a>
-    
-            <!-- Quote -->
-            <div class="quote">
-                <p>"A room without books is like a body without a soul." - Marcus Tullius Cicero</p>
-            </div>
-            <!--maybe try to have it change quotes randomly-->
-    
-            <!-- Copyright Disclaimer -->
-            <div class="copyright">
-                <p>&copy; 2023 KitBook. All rights reserved.</p>
-            </div>
-        </footer>
-    </body>
+      <!-- Copyright Disclaimer -->
+      <div class="copyright">
+        <p>&copy; 2023 KitBook. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>

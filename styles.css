@@ -1,810 +1,831 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 :root {
-    --color-classic: #432818;
-    --color-ya: #BB9457;
-    --color-romance: #9A2A2A;
-    --color-fantasy: #99582A;
-    --color-scifi: #E1C16E;
-    --color-mystery: #4A0404;
-    --color-thriller: #6F1D1B;
-    --color-historical: #EADDCA;
-    --color-contemporary: #EADDCA;
-    --color-literary: #EADDCA;
-    --color-adventure: #C19A6B;
-    --color-horror: #800020;
-    --color-dystopian: #8B0000;
-    --color-graphic: #99582A;
-    --color-memoir: #966919;
-    --color-biography: #966919;
-    --color-selfhelp: #EADDCA;
-    --color-nonfiction: #C04000;
-    --color-poetry: #F5DEB3;
-    --color-humor: #A95C68;
-    --color-suspense: #800020;
-    --color-crime: #BB9457;
-    --color-paranormal: #CD7F32;
-    --color-science: #808000;
-    --color-philosophy: #483C32;
-    --color-satire: #7B3F00;
-  }
-  
+  --color-classic: #432818;
+  --color-ya: #bb9457;
+  --color-romance: #9a2a2a;
+  --color-fantasy: #99582a;
+  --color-scifi: #e1c16e;
+  --color-mystery: #4a0404;
+  --color-thriller: #6f1d1b;
+  --color-historical: #eaddca;
+  --color-contemporary: #eaddca;
+  --color-literary: #eaddca;
+  --color-adventure: #c19a6b;
+  --color-horror: #800020;
+  --color-dystopian: #8b0000;
+  --color-graphic: #99582a;
+  --color-memoir: #966919;
+  --color-biography: #966919;
+  --color-selfhelp: #eaddca;
+  --color-nonfiction: #c04000;
+  --color-poetry: #f5deb3;
+  --color-humor: #a95c68;
+  --color-suspense: #800020;
+  --color-crime: #bb9457;
+  --color-paranormal: #cd7f32;
+  --color-science: #808000;
+  --color-philosophy: #483c32;
+  --color-satire: #7b3f00;
+}
 
 body {
-    background-color: #FFEECC;
-    padding:0;
-    margin: 0;
-
+  background-color: #ffeecc;
+  padding: 0;
+  margin: 0;
 }
 
 #logo {
-    margin: 0;
+  margin: 0;
 }
 
 .logo {
-    color: #432818;
+  color: #432818;
 }
 
 #CurrentDeal {
-    background-color: #432818;
-    color: #FFEECC;
-    margin: 0;
-    font-size: 22px;
-    padding: 8px;
-    text-align: center;
+  background-color: #432818;
+  color: #ffeecc;
+  margin: 0;
+  font-size: 22px;
+  padding: 8px;
+  text-align: center;
 }
 
 .navbar {
-    position: relative;
-    background: #99582A;
+  position: relative;
+  background: #99582a;
 }
 
 #navlist {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    background: #99582A;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  background: #99582a;
 }
 
 #navlist li {
-    flex: auto;
-    text-align: center;
-    padding: 0.3em;
-    font-size: 30px;
-    color: #FFE6A7;
+  flex: auto;
+  text-align: center;
+  padding: 0.3em;
+  font-size: 30px;
+  color: #ffe6a7;
 }
 
-
 a {
-   color: #FFE6A7;
-    text-decoration: none;
+  color: #ffe6a7;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
-    text-decoration-color: #6F1D1B;
-    cursor:pointer;
+  text-decoration: underline;
+  text-decoration-color: #6f1d1b;
+  cursor: pointer;
 }
 
-#join-today { 
-    color: #FFE6A7;
-    text-decoration: underline;
+#join-today {
+  color: #ffe6a7;
+  text-decoration: underline;
 }
 
-#join-today:hover { 
-    cursor: pointer;
+#join-today:hover {
+  cursor: pointer;
 }
 
-.intro{
-    display: flex;
+.intro {
+  display: flex;
 }
 
 .welcome_image {
-  flex:auto;
-    width: 50%;
+  flex: auto;
+  width: 50%;
 }
 
 .reading_book {
-    float: left;
-    display: block;
-    margin: 50px 50px 50px 50px;
-    width: 100%;
+  float: left;
+  display: block;
+  margin: 50px 50px 50px 50px;
+  width: 100%;
 }
 
 .welcome_text {
-    flex: auto;
-    width: 50%;
-    margin: 52px 50px 50px 100px;
-    /*top right bottom left*/
-    text-align: center;
+  flex: auto;
+  width: 50%;
+  margin: 52px 50px 50px 100px;
+  /*top right bottom left*/
+  text-align: center;
 }
 
 h1 {
-    color: #432818;
-    font-size:4em;
-    text-align: center;
-    margin-bottom: 10px;
+  color: #432818;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 h2 {
-    color: #432818;
-    font-size:3em;
-    text-align: center;
-    margin-bottom: 10px;
+  color: #432818;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .welcome_para {
-    text-align:center;
-    color: #432818;
-    font-size: 25px;
+  text-align: center;
+  color: #432818;
+  font-size: 25px;
 }
 
 .btn-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #join-now-btn {
-    background-color: #6F1D1B;
-    color: #FFEECC;
-    border: none;
-    font-size: 20px;
-    padding: 9px;
-    border-radius: 5px;
-    height: 60px;
-    width: 125px;
-    text-align: center;
-    margin-right: 10px;
-    transition: 0.3s;
+  background-color: #6f1d1b;
+  color: #ffeecc;
+  border: none;
+  font-size: 20px;
+  padding: 9px;
+  border-radius: 5px;
+  height: 60px;
+  width: 125px;
+  text-align: center;
+  margin-right: 10px;
+  transition: 0.3s;
 }
 
-#join-now-btn:hover{
-    text-align: center;
-    cursor: pointer;
-    background: #B52E2C;
-    transition: 0.3s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+#join-now-btn:hover {
+  text-align: center;
+  cursor: pointer;
+  background: #b52e2c;
+  transition: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-#log-in-btn{
-    background-color: #FFEECC;
-    color: #6F1D1B;
-    font-size: 20px;
-    padding: 9px;
-    border: 2px solid #6F1D1B;
-    border-radius: 5px;
-    height: 60px;
-    width: 125px;
-    margin-left: 10px;
-    transition: 0.3s;
+#log-in-btn {
+  background-color: #ffeecc;
+  color: #6f1d1b;
+  font-size: 20px;
+  padding: 9px;
+  border: 2px solid #6f1d1b;
+  border-radius: 5px;
+  height: 60px;
+  width: 125px;
+  margin-left: 10px;
+  transition: 0.3s;
 }
 
-#log-in-btn:hover{
-    text-align: center;
-    cursor: pointer;
-    color: #B52E2C;
-    border-color: #B52E2C;
-    transition: 0.3s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+#log-in-btn:hover {
+  text-align: center;
+  cursor: pointer;
+  color: #b52e2c;
+  border-color: #b52e2c;
+  transition: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
 
 #second-h1 {
-    font-size: 4em;
-    text-align: center; 
+  font-size: 4em;
+  text-align: center;
 }
 
-#a-note{
-    text-align: center;
-    font-size: 25px;
-    color: #432818;
+#a-note {
+  text-align: center;
+  font-size: 25px;
+  color: #432818;
 }
 
 .flex-container {
-   display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-
 #a-note-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 20px;
-    column-gap: 6em;
-    font-size: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  column-gap: 6em;
+  font-size: 30px;
 }
 
 .post-it {
-    list-style: none;
+  list-style: none;
 }
 
 .post-it::before {
-    content: '';
-    display: inline-block;
-    height: 30px;
-    width: 29px;
-    background-image: url(Images/post-it.svg);
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 29px;
+  background-image: url(Images/post-it.svg);
 }
 
 .bookmark {
-    list-style: none;
+  list-style: none;
 }
 
-.bookmark::before{
-    content: '';
-    display: inline-block;
-    height: 30px;
-    width: 32px;
-    background-image: url(Images/bookmark-bar-icon.svg);
-    
+.bookmark::before {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 32px;
+  background-image: url(Images/bookmark-bar-icon.svg);
 }
-
 
 .highlighter {
-   list-style: none;
+  list-style: none;
 }
 
 .highlighter::before {
-    content: '';
-    display: inline-block;
-    height: 28px;
-    width: 31px;
-    background-image: url(Images/highlight-marker-icon.svg);
+  content: "";
+  display: inline-block;
+  height: 28px;
+  width: 31px;
+  background-image: url(Images/highlight-marker-icon.svg);
 }
 
 .pen {
-    list-style: none;
+  list-style: none;
 }
 
-.pen::before{
-   content: '';
-    display: inline-block;
-    height: 32px;
-    width: 30px;
-    background-image: url(Images/pen-tool-icon.svg);
+.pen::before {
+  content: "";
+  display: inline-block;
+  height: 32px;
+  width: 30px;
+  background-image: url(Images/pen-tool-icon.svg);
 }
 
 .footer {
-    background-color: #99582A;
-    padding-top: 20px;
-    text-align: center;
+  background-color: #99582a;
+  padding-top: 20px;
+  text-align: center;
 }
 
 /* Style for the quick links */
 .footer a {
-    text-decoration: none;
-    padding: 0 10px;
-    margin: 0 10px;
-    font-weight: bold;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer-divider {
+  width: 35%;
 }
 
 /* Style for the quote */
 .quote {
-    font-style: italic;
-    margin: 20px 5px;
-    color: beige;
-    font-family: Inter;
-    font-weight: 100;
+  font-style: italic;
+  margin: 20px 5px;
+  color: beige;
+  font-family: Inter;
+  font-weight: 100;
 }
 
 .copyright {
-    background-color: #432818;
-    height: 50px;
-    display: flex; /* Make the container a flex container */
-    justify-content: center; /* Horizontally center the content */
-    align-items: center; /* Center vertically */
+  background-color: #432818;
+  height: 50px;
+  display: flex; /* Make the container a flex container */
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Center vertically */
 }
 
 .copyright p {
-   margin: 0;
-   font-family: Inter;
-   font-weight: 100;
-   color: #FFE6A7;
+  margin: 0;
+  font-family: Inter;
+  font-weight: 100;
+  color: #ffe6a7;
 }
 
 @media screen and (max-width: 700px) {
   .welcome_image {
-    flex:none;
+    flex: none;
     width: 80%;
-    }
-    
+  }
+
   .welcome_text {
     flex: none;
     width: 100%;
     margin: 50px 0px 80px 0px;
     /*top right bottom left*/
     text-align: center;
-    }
-    
-    .welcome_para {
-    text-align:center;
+  }
+
+  .welcome_para {
+    text-align: center;
     color: #432818;
     font-size: 25px;
     margin-right: 2px;
-}
+  }
 
-    .intro {
+  .intro {
     display: block;
-    }
-    
-    #navlist {
+  }
+
+  #navlist {
     list-style: none;
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
-    background: #99582A;
-}
+    background: #99582a;
+  }
 
-    #a-note-list {
+  #a-note-list {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 20px;
-    font-size: 30px;
+  }
+
+  .footer a {
+    margin: 0 5px;
+    font-size: 1rem;
+  }
+
+  .footer-divider {
+    width: 75%;
+  }
 }
 
+/* login & signup Page */
+.login-box, .signup-box {
+  display: flex;
 }
 
-
-/* Login Page */
-.login-box {
-    display: flex;
-}
-
-.login-image{
+.login-image, .signup-image {
   flex: auto;
-    width: 50%;
-    margin: 30px;
+  width: 50%;
+  margin: 30px;
 }
 
 .stack_of_books {
-    width: 80%;
-    margin: inherit;
+  width: 80%;
+  margin: inherit;
 }
 
 .login {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    border: solid #000000 1px;
-    border-radius: 5px;
-    width: 50%;
-    margin: 25px 50px 0px 20px;
-    /*top right bottom left*/
-     height:450px;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  border: solid #000000 1px;
+  border-radius: 5px;
+  width: 50%;
+  margin: 25px 50px 0px 20px;
+  /*top right bottom left*/
+  padding: 0 20px;
+  height: auto;
 }
 
 .signup {
-    display: flex;
-    flex-direction: column;
-    float: right;
-    border: solid #000000 1px;
-    border-radius: 5px;
-    width: 80%;
-    margin: 25px 50px 25px 20px;
-    /*top right bottom left*/
-    height: 575px;
+  float: right;
+  border: solid #000000 1px;
+  border-radius: 5px;
+  width: 80%;
+  margin: 25px 50px 25px 20px;
+  /*top right bottom left*/
+  padding: 0 20px;
+  height: auto;
 }
 
-/*login form*/
-.welcome-back, .signup-heading {
-    font-size: 2em;
-    margin-bottom: 10%;
+/*login & signup form*/
+.welcome-back,
+.signup-heading {
+  font-size: 2em;
+  margin-bottom: 10%;
 }
 
-input[type = "text"], input[type = "email"], input[type = "password"] {
-   border: 1px solid #432818; 
-    border-radius: 2px;
-    width: 88%;
-    height: 44px;
-    margin-left: 5%;
-    background-color: transparent;
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border: 1px solid #432818;
+  display: flex;
+  border-radius: 2px;
+  width: 100%;
+  height: 44px;
+  background-color: transparent;
+  padding: 5px;
 }
 
-input[type = "text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
-   outline: 1px solid #432818;
-    
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: 2px solid #432818;
 }
 
 ::placeholder {
-    color: slategrey;
+  color: slategrey;
 }
 
-input[type = "text"], input[type="email"] {
-    margin-bottom: 5%;
+input[type="text"],
+input[type="email"] {
+  margin-bottom: 5%;
 }
 
+.invalid {
+  color: red;
+}
+
+.valid {
+  color: #432818;
+}
+
+.emptyField {
+  border: 2px solid red;
+  color: red;
+}
+
+.emptyField::placeholder {
+  color: red;
+}
 
 /* Hide the browser's default checkbox */
- .check-container input[type="checkbox"] {
-    display: none;
-  }
-  
-  /* Style the custom checkbox container */
-  .check-container {
-    position: relative;
-    padding-left: 25px; /* Adjust as needed */
-    margin-left: 5%;
-    cursor: pointer;
-    vertical-align: middle;
-  }
-  
-  /* Style the custom checkbox */
-  .check-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 18px; /* Adjust the size of the checkbox */
-    height: 18px; /* Adjust the size of the checkbox */
-    border: 1px solid #432818; /* Adjust the checkbox border color */
-    border-radius: 5px;
-    background-color: transparent;
-  }
+.check-container input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the custom checkbox container */
+.check-container {
+  position: relative;
+  padding-left: 25px; /* Adjust as needed */
+  margin-left: 5%;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* Style the custom checkbox */
+.check-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px; /* Adjust the size of the checkbox */
+  height: 18px; /* Adjust the size of the checkbox */
+  border: 1px solid #432818; /* Adjust the checkbox border color */
+  border-radius: 5px;
+  background-color: transparent;
+}
 
 /* Style the checked custom checkbox */
-  .check-container input[type="checkbox"]:checked + .checkmark::before {
-    background-color: transparent; /* Adjust the checked checkbox color */
-  }
-  
-  /* Style the checkmark inside the custom checkbox */
-  .check-container .checkmark::after {
-    content: "";
-    position: absolute;
-    top: 0%;
-    left: 5%;
-    width: 5px; /* Adjust the size of the checkmark */
-    height: 15px; /* Adjust the size of the checkmark */
-    border: solid black; /* Adjust the checkmark color */
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    opacity: 0;
-  }
-  
-  /* Show the checkmark for the checked custom checkbox */
-  .check-container input[type="checkbox"]:checked ~ .checkmark::after {
-    opacity: 1;
-  }
-  
+.check-container input[type="checkbox"]:checked + .checkmark::before {
+  background-color: transparent; /* Adjust the checked checkbox color */
+}
+
+/* Style the checkmark inside the custom checkbox */
+.check-container .checkmark::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  width: 5px; /* Adjust the size of the checkmark */
+  height: 15px; /* Adjust the size of the checkmark */
+  border: solid black; /* Adjust the checkmark color */
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+/* Show the checkmark for the checked custom checkbox */
+.check-container input[type="checkbox"]:checked ~ .checkmark::after {
+  opacity: 1;
+}
 
 .remember-me-container {
-    color: #432818;
-    margin: 20px 20px 20px 0px;
-    font-size: 1.25em;
+  color: #432818;
+  margin: 20px 20px 20px 0px;
+  font-size: 1.25em;
 }
 
 .not-a-member {
-    color: #432818;
-    text-align: center;
-    padding-top: 1%;
-    font-size: 20px;
+  color: #432818;
+  text-align: center;
+  padding-top: 1%;
+  font-size: 20px;
 }
 
-
 .sign-up-link {
-    font-weight: bold;
-    color: #6F1D1B;
-    cursor: pointer;
+  font-weight: bold;
+  color: #6f1d1b;
+  cursor: pointer;
 }
 
 .sign-up-link:hover {
-    cursor:pointer;
-    color: #B52E2C;
+  cursor: pointer;
+  color: #b52e2c;
 }
 
-#loginpage-button {
-    margin-left: 5%;
-    width: 88%;
-    height: 44px;
-    background-color: #6F1D1B;
-    border: none;
-    border-radius: 2px;
-    color: #FFEECC;
-    font-weight: bold;
-    font-size: 1.25em;
-    cursor: pointer;
+#loginpage-button,
+#CA-button {
+  margin-left: 5%;
+  width: 88%;
+  height: 44px;
+  background-color: #6f1d1b;
+  border: none;
+  border-radius: 2px;
+  color: #ffeecc;
+  font-weight: bold;
+  font-size: 1.25em;
+  cursor: pointer;
 }
 
-
-#loginpage-button:hover {
-    text-align: center;
-    cursor: pointer;
-    background-color: #B52E2C;
-    transition: 0.3s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+#loginpage-button:hover,
+#CA-button:hover {
+  text-align: center;
+  cursor: pointer;
+  background-color: #b52e2c;
+  transition: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
 
 @media screen and (max-width: 700px) {
-.login-box {
+  .login-box, .signup-box {
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-    
-.login {
-    width: 90%;
-    margin:  auto auto 15px auto;
-}
+  }
 
-.login-image{
+  .login {
+    width: 90%;
+    margin: auto auto 15px auto;
+  }
+
+  .login-image, .signup-image {
     width: 80%;
     margin: auto;
-}
- .stack_of_books {
+  }
+  .stack_of_books {
     display: block;
     margin: auto;
-}
-    
+  }
 }
 
 /*Buy a book kit*/
 .subscribe-plans {
-    display:flex;
-    box-sizing: border-box;
-    column-gap: 5em;
-    justify-content: center;
-    padding: inherit;
-    align-items: center;
-    margin-bottom: 15px;
+  display: flex;
+  box-sizing: border-box;
+  column-gap: 5em;
+  justify-content: center;
+  padding: inherit;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 #subscribe-text {
-    text-align: center;
-    font-size: 25px;
-    color: #432818;
-    margin-top: 10px;
+  text-align: center;
+  font-size: 25px;
+  color: #432818;
+  margin-top: 10px;
 }
 
 .price {
   font-weight: bold;
-    font-size: 2.5em;
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 15px;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 /*give class*/
 .sub-button {
-    display: block;
-    border: none;
-    color: #FFE6A7;
-    background: #6F1D1B;
-    padding: 12px 30px;
-    border-radius: 2px;
-    font-size: 15px;
-    cursor: pointer;
-    margin: auto;
-    margin-bottom: 8px;
+  display: block;
+  border: none;
+  color: #ffe6a7;
+  background: #6f1d1b;
+  padding: 12px 30px;
+  border-radius: 2px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 8px;
 }
 
 .sub-button:hover {
-    background-color: #B52E2C;
-     transition: 0.3s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: #b52e2c;
+  transition: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-
-
 
 .book-sub-heading {
-    margin: auto;
-   color: #FFE6A7; 
-    background-color: #432818;
-    font-weight: normal;
-    font-size: 2.5em;
-   padding: 10px 50px 10px 50px;
-    border-radius: 5px 5px 0px 0px;
+  margin: auto;
+  color: #ffe6a7;
+  background-color: #432818;
+  font-weight: normal;
+  font-size: 2.5em;
+  padding: 10px 50px 10px 50px;
+  border-radius: 5px 5px 0px 0px;
 }
 
-
 #book1 {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-} 
-
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
 
 #book2 {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
 #book3 {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
 /*help with instead of margins to center, I need something else*/
 @media screen and (max-width: 700px) {
-.subscribe-plans {
+  .subscribe-plans {
     display: block;
+  }
 
-}
-
-.sub-button {
+  .sub-button {
     border: none;
-    color: #FFE6A7;
-    background: #6F1D1B;
+    color: #ffe6a7;
+    background: #6f1d1b;
     padding: 12px 30px;
     border-radius: 2px;
     font-size: 15px;
     cursor: pointer;
-}
- 
+  }
 }
 
 /*All Books page */
 div {
-    display: block;
+  display: block;
 }
 
 .allbooks {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    padding: 5px;
-    margin: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  padding: 5px;
+  margin: 50px 0;
 }
 
 .thebook_div {
-    width: 150px;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    padding: 5px;
+  width: 150px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 5px;
 }
 
 .img_div {
-    padding: 5px;
-    margin: 20px auto 0;
-    position: relative;
+  padding: 5px;
+  margin: 20px auto 0;
+  position: relative;
 }
 
 .Books {
-    width: 100%
+  width: 100%;
 }
 
 .label_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-
 .label {
-    color: white;
-    align-items: center;
-    padding: 0 6px 1px;
-    min-height: 20px;
-    border-radius: 3px;
-    line-height: 1.3rem;
-    letter-spacing: .1rem;
-    text-align: center;
-    font-size: 1em;
+  color: white;
+  align-items: center;
+  padding: 0 6px 1px;
+  min-height: 20px;
+  border-radius: 3px;
+  line-height: 1.3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-size: 1em;
 }
 
 .classic {
-    background-color: var(--color-classic); 
-    color: white;
+  background-color: var(--color-classic);
+  color: white;
 }
 
 .dystopian {
-    background-color: var(--color-dystopian);
-    color: white;
+  background-color: var(--color-dystopian);
+  color: white;
 }
 
 .sci-fi {
-    background-color: var(--color-scifi);
-    color: black;
+  background-color: var(--color-scifi);
+  color: black;
 }
 
 .humor {
-    background-color: var(--color-humor);
-    color: white;
+  background-color: var(--color-humor);
+  color: white;
 }
 
 .thriller {
-    background-color: var(--color-thriller);
+  background-color: var(--color-thriller);
 }
 
 .satire {
-    background-color: var(--color-satire);
-    color: white;
+  background-color: var(--color-satire);
+  color: white;
 }
 
-.mystery{
-    background-color: var(--color-mystery);
-    color: white;
+.mystery {
+  background-color: var(--color-mystery);
+  color: white;
 }
 
 .romance {
-    background-color: var(--color-romance);
-    color: white;
+  background-color: var(--color-romance);
+  color: white;
 }
 
 .ya {
-    background-color: var(--color-ya);
-    color: black;
+  background-color: var(--color-ya);
+  color: black;
 }
 
 .gn {
-    background-color: var(--color-graphic);
-    color: white;
+  background-color: var(--color-graphic);
+  color: white;
 }
 
 .memoir {
-    background-color: var(--color-memoir);
-    color: white;
+  background-color: var(--color-memoir);
+  color: white;
 }
 
 .thebook_info {
-    text-align: center;
-    font-size: 15px;
-    line-height: 1.5;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 h4 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 20px 5px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 5px;
 }
 
 .thebook_info_para {
-    font-size: inherit;
-    padding: 5px;
-    line-height: 1.5;
+  font-size: inherit;
+  padding: 5px;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 1440px) {
-    
-    h1 {
-        font-size: 2.9rem;
-    }
+  h1 {
+    font-size: 2.9rem;
+  }
 
-    .allbooks {
-        grid-template-columns: repeat(5, 1fr);
-    }
+  .allbooks {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 @media screen and (max-width: 970px) {
-    h1 {
-        font-size: 2.9rem;
-    }
+  h1 {
+    font-size: 2.9rem;
+  }
 
-    .allbooks {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .allbooks {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media screen and (max-width: 750px) {
-    h1 {
-        font-size: 2.9rem;
-    }
+  h1 {
+    font-size: 2.9rem;
+  }
 
-    .allbooks {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .allbooks {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 560px) {
-    .allbooks {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .allbooks {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 450px) {
-    .allbooks {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .allbooks {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /*use goodreads or google api to fetch reviews for the book*/
 
 /*Privacy Policy*/
 
-.privacy-policy-body p, .terms-body p, .accessibility-body p {
-    color: #432818;
-    font-size: 20px;
-    text-align: left;
-    margin: 10px;
+.privacy-policy-body p,
+.terms-body p,
+.accessibility-body p {
+  color: #432818;
+  font-size: 20px;
+  text-align: left;
+  margin: 10px;
 }

@@ -1,87 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <title>KitBook</title>
-      <meta charset="utf-8" />
-      <link rel="stylesheet" href="styles.css">
-      <script src="script.js"></script>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KitBook</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <header>
-      <h1 id=logo><a href="index.html" class="logo">KitBook</a></h1>
+      <h1 id="logo"><a href="index.html" class="logo">KitBook</a></h1>
       <p id="CurrentDeal">
-        Get Your First Box for 30% with the code <strong>TBR</strong> at checkout. <a href="login.html" id=join-today>Join Today</a>
+        Get Your First Box for 30% with the code <strong>TBR</strong> at
+        checkout. <a href="login.html" id="join-today">Join Today</a>
       </p>
       <nav class="navbar">
-          <ul id="navlist">
-              <li><a href="allbooks.html">All Books</a></li>
-              <li><a href="Buy-a-book-kit.html">Buy a Book Kit</a></li>
-              <li><a href="#">Our Company</a></li>
-              <li><a href="login.html">Log-In/Sign-Up</a></li>
-          </ul>
+        <ul id="navlist">
+          <li><a href="allbooks.html">All Books</a></li>
+          <li><a href="Buy-a-book-kit.html">Buy a Book Kit</a></li>
+          <li><a href="#">Our Company</a></li>
+          <li><a href="login.html">Log-In/Sign-Up</a></li>
+        </ul>
       </nav>
     </header>
     <main>
-    <section class="intro">
+      <section class="intro">
         <aside class="welcome_image">
-            <img src="Images/Reading.jpg" alt="Book covering a woman's face" class="reading_book">
+          <img
+            src="Images/Reading.jpg"
+            alt="Book covering a woman's face"
+            class="reading_book"
+          />
         </aside>
         <section class="welcome_text">
-            <aside>
-                <h1 id="welcome_heading">Welcome!</h1>
-                <p class="welcome_para">
-                    Need a new book without the bookstore trip? Exploring new genres? Searching for the ideal gift for a book lover?
-                </p>
-                <p class="welcome_para">
-                    No worries! You came to the right spot. This button can help solve <i>all</i> those problems. 
-                </p>
-                <div class="btn-container">
-                  <form action="createaccount.html">
-                      <button class= "btns" id="join-now-btn">
-                              Join Now!
-                      </button>
-                  </form>
-                  <form action="login.html">
-                      <button class= "btns" id="log-in-btn" >
-                          Log in!
-                      </button>
-                  </form>
-                </div>
-            </aside>
-        </section>
-        </section>
-        <section id="what-we-do">
-            <h2>What We Do For You!</h2>
-            <p id="a-note">
-                Alongside providing you with the latest releases, for an extra $5, we give you what every book needs:
+          <aside>
+            <h1 id="welcome_heading">Welcome!</h1>
+            <p class="welcome_para">
+              Need a new book without the bookstore trip? Exploring new genres?
+              Searching for the ideal gift for a book lover?
             </p>
-            <section class="flex-container">
-                <ul id="a-note-list">
-                    <li class="bookmark"> Bookmarks </li>
-                    <li class="post-it"> Post-its </li>
-                    <li class="highlighter"> Highlighters </li>
-                    <li class="pen"> Pens </li>
-                </ul>
-            </section>
+            <p class="welcome_para">
+              No worries! You came to the right spot. This button can help solve
+              <i>all</i> those problems.
+            </p>
+            <div class="btn-container">
+              <form action="createaccount.html">
+                <button class="btns" id="join-now-btn">Join Now!</button>
+              </form>
+              <form action="login.html">
+                <button class="btns" id="log-in-btn">Log in!</button>
+              </form>
+            </div>
+          </aside>
         </section>
+      </section>
+      <section id="what-we-do">
+        <h2>What We Do For You!</h2>
+        <p id="a-note">
+          Alongside providing you with the latest releases, for an extra $5, we
+          give you what every book needs:
+        </p>
+        <section class="flex-container">
+          <ul id="a-note-list">
+            <li class="bookmark">Bookmarks</li>
+            <li class="post-it">Post-its</li>
+            <li class="highlighter">Highlighters</li>
+            <li class="pen">Pens</li>
+          </ul>
+        </section>
+      </section>
     </main>
     <footer class="footer">
-        <!-- Quick Links -->
+      <!-- Quick Links -->
+      <!--removing for now
         <a href="accessibility.html">Accessibility Statement</a>
         <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
+        <a href="terms.html">Terms of Use</a> 
+        -->
+      <a href="allbooks.html">All Books</a>
+      <a href="Buy-a-book-kit.html">Buy a Book Kit</a>
+      <a href="#">Our Company</a>
+      <a href="login.html">Log-In/Sign-Up</a>
 
-        <!-- Quote -->
-        <div class="quote">
-            <p>"A room without books is like a body without a soul." - Marcus Tullius Cicero</p>
-        </div>
-        <!--maybe try to have it change quotes randomly-->
+      <hr class="footer-divider" color="#C6895D" />
 
-        <!-- Copyright Disclaimer -->
-        <div class="copyright">
-            <p>&copy; 2023 KitBook. All rights reserved.</p>
-        </div>
+      <!-- Quote -->
+      <div class="quote">
+        <p>
+          "A room without books is like a body without a soul." - Marcus Tullius
+          Cicero
+        </p>
+      </div>
+      <!--maybe try to have it change quotes randomly-->
+
+      <!-- Copyright Disclaimer -->
+      <div class="copyright">
+        <p>&copy; 2023 KitBook. All rights reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
