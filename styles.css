@@ -366,7 +366,7 @@ h2 {
 }
 
 .stack_of_books {
-  width: 80%;
+  width: 70%;
   margin: inherit;
 }
 
@@ -384,7 +384,6 @@ h2 {
 }
 
 .signup {
-  float: right;
   border: solid #000000 1px;
   border-radius: 5px;
   width: 80%;
@@ -436,9 +435,8 @@ input[type="email"] {
   color: #432818;
 }
 
-.emptyField {
+input.emptyField {
   border: 2px solid red;
-  color: red;
 }
 
 .emptyField::placeholder {

@@ -11,9 +11,8 @@ var lname = document.getElementById("lname");
 var email = document.getElementById("email");
 
 //event listeners
-form.addEventListener("keyup", validatePassword);
+password.addEventListener("keyup", validatePassword);
 form.addEventListener("submit", validateForm);
-//form.addEventListener("submit", checkEmptyFields);
 
 //functions
 function validateForm(event) {
@@ -25,7 +24,7 @@ function validateForm(event) {
     formValid = false;
   }
     
-  if(!validatePassword()){
+  if(!validatePassword()) {
     formValid = false;
   }
 
@@ -37,37 +36,52 @@ function validateForm(event) {
   }
 }
 
-/*
+
 function checkEmptyFields() {
+  let formValid = true;
   if (fname.value === "") {
-    fname.classList.add("error");
+    fname.classList.add("emptyField");
     formValid = false;
   } else {
-    fname.classList.remove("error");
+    fname.classList.remove("emptyField");
   }
 
   if (lname.value === "") {
-    lname.classList.add("error");
+    lname.classList.add("emptyField");
     formValid = false;
   } else {
-    lname.classList.remove("error");
+    lname.classList.remove("emptyField");
   }
 
   if (email.value === "") {
-    email.classList.add("error");
+    email.classList.add("emptyField");
     formValid = false;
   } else {
-    email.classList.remove("error");
+    email.classList.remove("emptyField");
   }
 
+  if (password.value === "") {
+    password.classList.add("emptyField");
+    formValid = false;
+  } else {
+    password.classList.remove("emptyField");
+  }
+
+    console.log("EF: " + formValid);
   return formValid
 }
-*/
+
 
 function validatePassword() {
 
   //password length
-  if  (password.value.length >= 8) {
+  let formValid = true;
+
+  if (password.value.length > 0) {
+    password.classList.remove("emptyField");
+  }
+
+  if (password.value.length >= 8) {
     lengthRequirement.classList.add("valid");
     lengthRequirement.classList.remove("invalid");
   } else {
@@ -116,5 +130,6 @@ function validatePassword() {
     formValid = false;
   }
 
+  console.log("PW: " + formValid);
   return formValid;
 }
