@@ -9,6 +9,7 @@ var specialRequirement = document.getElementById("special");
 var fname = document.getElementById("fname");
 var lname = document.getElementById("lname");
 var email = document.getElementById("email");
+var requirements = document.querySelector(".pwrequirements");
 
 //event listeners
 password.addEventListener("keyup", validatePassword);
@@ -73,6 +74,7 @@ function checkEmptyFields() {
 
 
 function validatePassword() {
+  showPWRequirements(password)
 
   //password length
   let formValid = true;
@@ -132,4 +134,9 @@ function validatePassword() {
 
   console.log("PW: " + formValid);
   return formValid;
+}
+
+/*Try to see if you can make it have a  smooth dropdown animation */
+function showPWRequirements(password) {
+  requirements.style.display = password.length > 0 ? "none" : "block";
 }

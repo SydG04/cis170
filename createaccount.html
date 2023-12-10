@@ -23,7 +23,7 @@
       </ul>
     </nav>
   </header>
-  <body>  
+  <body>
     <main>
       <section class="signup-box">
         <!--rename to sign-up box-->
@@ -36,71 +36,96 @@
           />
         </aside>
         <!-- </section> -->
-        <form id="signup-form" method="get">
-          <section class="signup">
-            <aside>
-              <h1 class="signup-heading">BECOME A MEMBER!</h1>
-              <label for="fname">
-                <input
-                  type="text"
-                  id="fname"
-                  name="fname"
-                  placeholder="First Name"
-                  
-                />
-              </label>
+        <section class="signup">
+          <form
+            id="signup-form"
+            method="get"
+            name="contact"
+            class="contact-inform form"
+          >
+            <h1 class="signup-heading">BECOME A MEMBER!</h1>
+            <div class="form-control">
+              <input
+                id="fname"
+                type="text"
+                name="fname"
+                class="form-input"
+                placeholder="none"
+              />
+              <label for="fname" class="form-label">First Name</label>
+            </div>
 
-              <label for="lname">
-                <input
-                  type="text"
-                  id="lname"
-                  name="lname"
-                  placeholder="Last Name"
-                  
-                />
-              </label>
+            <div class="form-control">
+              <input
+                id="lname"
+                type="text"
+                name="lname"
+                class="form-input"
+                placeholder="none"
+              />
+              <label for="lname" class="form-label">Last Name</label>
+            </div>
 
-              <label for="email">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email Address"
-                  
-                />
-              </label>
+            <div class="form-control">
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="form-input"
+                placeholder="none"
+              />
+              <label for="email" class="form-label">Email</label>
+            </div>
 
-              <label for="password">
-                <input
-                  type="password"
-                  id="password"
-                  placeholder="Password"
-                  
-                />
-              </label>
-              <ul>
-                <li id="length" class="invalid">At least 8 characters</li>
-                <li id="uppercase" class="invalid">At least one uppercase letter</li>
-                <li id="lowercase" class="invalid">At least one lowercase letter</li>
-                <li id="number" class="invalid">At least one number</li>
-                <li id="special" class="invalid">At least one special character</li>
-              </ul>
+            <div class="form-control">
+              <input
+                id="password"
+                type="password"
+                name="password"
+                class="form-input"
+                placeholder="none"
+              />
+              <label for="password" class="form-label">Password</label>
+            </div>
 
-              <section class="remember-me-container">
-                <label class="check-container">
-                  <input type="checkbox" class="remember-me" />
-                  Remember Me
-                  <span class="checkmark"></span>
-                </label>
-              </section>
-              <input type="submit" id="CA-button" value="Create Account" />
-            </aside>
+            <ul class="pwrequirements">
+              <li id="length" class="invalid">At least 8 characters</li>
+              <li id="uppercase" class="invalid">
+                At least one uppercase letter
+              </li>
+              <li id="lowercase" class="invalid">
+                At least one lowercase letter
+              </li>
+              <li id="number" class="invalid">At least one number</li>
+              <li id="special" class="invalid">
+                At least one special character
+              </li>
+            </ul>
+
+            <section class="remember-me-container">
+              <label class="check-container">
+                <input type="checkbox" class="remember-me" />
+                Remember Me
+                <span class="checkmark"></span>
+              </label>
+            </section>
+
             <p id="status"></p>
-            <script src="signupValidate.js"></script>
-          </section>
-        </form>
+            <input type="submit" id="CA-button" value="Create Account" />
+            
+            <p class="a-member">
+              Already have an account?
+              <u>
+                <a href="login.html" class="create-account-link"> Log In </a>
+              </u>
+            </p>
+            
+            <script src="js/signupValidate.js"></script>
+          </form>
+        </section>
       </section>
     </main>
+
     <footer class="footer">
       <!-- Quick Links -->
       <a href="allbooks.html">All Books</a>
@@ -111,11 +136,8 @@
       <hr class="footer-divider" color="#C6895D" />
 
       <!-- Quote -->
-      <div class="quote">
-        <p>
-          "A room without books is like a body without a soul." - Marcus Tullius
-          Cicero
-        </p>
+      <div id="quote">
+        <p></p>
       </div>
       <!--maybe try to have it change quotes randomly-->
 
@@ -123,6 +145,7 @@
       <div class="copyright">
         <p>&copy; 2023 KitBook. All rights reserved.</p>
       </div>
+      <script src="js/quotesDisplay.js"></script>
     </footer>
   </body>
 </html>

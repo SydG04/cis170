@@ -27,6 +27,26 @@
   --color-science: #808000;
   --color-philosophy: #483c32;
   --color-satire: #7b3f00;
+
+  
+  --color-black: hsl(0, 0%, 10%);
+	--color-grays: hsl(0, 0%, 65%);
+	--color-light: hsl(0, 0%, 96%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-blues: hsl(225, 100%, 60%);
+
+	--shadow-normal: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+		0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+*,
+*::before,
+*::after {
+	text-rendering: optimizeLegibility;
 }
 
 body {
@@ -280,7 +300,8 @@ h2 {
 }
 
 /* Style for the quote */
-.quote {
+.quote, 
+#quote {
   font-style: italic;
   margin: 20px 5px;
   color: beige;
@@ -355,11 +376,14 @@ h2 {
 }
 
 /* login & signup Page */
-.login-box, .signup-box {
+.login-box, 
+.signup-box {
   display: flex;
+  align-items: center;
 }
 
-.login-image, .signup-image {
+.login-image, 
+.signup-image {
   flex: auto;
   width: 50%;
   margin: 30px;
@@ -370,25 +394,12 @@ h2 {
   margin: inherit;
 }
 
-.login {
-  display: flex;
-  flex-direction: column;
-  float: right;
-  border: solid #000000 1px;
-  border-radius: 5px;
-  width: 50%;
-  margin: 25px 50px 0px 20px;
-  /*top right bottom left*/
-  padding: 0 20px;
-  height: auto;
-}
-
+.login,
 .signup {
-  border: solid #000000 1px;
+  border: 1px solid #000000;
   border-radius: 5px;
-  width: 80%;
-  margin: 25px 50px 25px 20px;
-  /*top right bottom left*/
+  width: 35%;
+  margin: 20px;
   padding: 0 20px;
   height: auto;
 }
@@ -400,32 +411,88 @@ h2 {
   margin-bottom: 10%;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  border: 1px solid #432818;
-  display: flex;
-  border-radius: 2px;
+/*Form with Custom Floating Placeholder
+Syahrizal
+https://codepen.io/syrizaldev/pen/QWKogPa*/
+.form-control {
+  position: relative;
   width: 100%;
-  height: 44px;
-  background-color: transparent;
-  padding: 5px;
+  height: 3rem;
+  margin-bottom: 15px;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
+.form-label {
+  position: absolute;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: inherit;
+  left: 1rem;
+  top: 0.75rem;
+  padding: 0 5px;
+  color: slategrey;
+  background: #ffeecc;
+  transition: all 0.3s ease;
+}
+
+.form-input {
+  position: absolute;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: inherit;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  resize: none;
+  width: 100%; /* Updated width to 100% */
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #432818;
+  color: #432818;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+  box-sizing: border-box; 
+}
+
+.form-input::placeholder {
+  opacity: 0;
+  visibility: hidden;
+  color: transparent;
+}
+
+.form-input:focus {
+  outline: none;
   outline: 2px solid #432818;
 }
 
-::placeholder {
-  color: slategrey;
+.form-input:focus ~ .form-label {
+  top: -0.75rem;
+  left: 1rem;
+  z-index: 5;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #432818;
+  transition: all 0.2s ease-in-out;
 }
 
-input[type="text"],
-input[type="email"] {
-  margin-bottom: 5%;
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+  top: -0.75rem;
+  left: 1rem;
+  z-index: 9;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
 }
+/*Form with Custom Floating Placeholder
+Syahrizal*/
+
+.pwrequirements {
+  margin: 0;
+  display: none;
+}
+
 
 .invalid {
   color: red;
@@ -500,20 +567,23 @@ input.emptyField {
   font-size: 1.25em;
 }
 
-.not-a-member {
+.not-a-member,
+.a-member {
   color: #432818;
   text-align: center;
   padding-top: 1%;
   font-size: 20px;
 }
 
-.sign-up-link {
+.sign-up-link,
+.create-account-link {
   font-weight: bold;
   color: #6f1d1b;
   cursor: pointer;
 }
 
-.sign-up-link:hover {
+.sign-up-link:hover,
+.create-account-link:hover {
   cursor: pointer;
   color: #b52e2c;
 }
@@ -543,20 +613,24 @@ input.emptyField {
 }
 
 @media screen and (max-width: 700px) {
-  .login-box, .signup-box {
+  .login-box, 
+  .signup-box {
     display: flex;
     flex-direction: column;
     width: 100%;
+    justify-content: center;
   }
 
-  .login {
+  .login,
+  .signup {
     width: 90%;
-    margin: auto auto 15px auto;
-  }
+    margin: 15px 10px;
+  } 
 
-  .login-image, .signup-image {
+  .login-image, 
+  .signup-image {
     width: 80%;
-    margin: auto;
+    margin: 10px;
   }
   .stack_of_books {
     display: block;

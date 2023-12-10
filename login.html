@@ -34,33 +34,58 @@
         </aside>
         <!-- </section> -->
         <section class="login">
-          <aside>
-            <h1 class="welcome-back">WELCOME BACK!</h1>
-            <input type="email" placeholder="Email Address" required />
+          <form
+          id="login-form"
+          method="get"
+          name="contact"
+          class="contact-inform form"
+        >
+          <h1 class="welcome-back">WELCOME BACK!</h1>
 
-            <input type="password" placeholder="Password" required />
-            <section class="remember-me-container">
-              <label class="check-container">
-                <input type="checkbox" class="remember-me" />
-                Remember Me
-                <span class="checkmark"></span>
-              </label>
-            </section>
+          <div class="form-control">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              class="form-input"
+              placeholder="none"
+            />
+            <label for="email" class="form-label">Email</label>
+          </div>
 
-            <button id="loginpage-button">Login</button>
-            <p class="not-a-member">
-              Not a member?
-              <u
-                ><a href="createaccount.html" class="sign-up-link" id="sign-up"
-                  >Sign Up</a
-                ></u
-              >
-            </p>
-          </aside>
-        </section>
+          <div class="form-control">
+            <input
+              id="password"
+              type="password"
+              name="password"
+              class="form-input"
+              placeholder="none"
+            />
+            <label for="password" class="form-label">Password</label>
+          </div>
+
+          <section class="remember-me-container">
+            <label class="check-container">
+              <input type="checkbox" class="remember-me" />
+              Remember Me
+              <span class="checkmark"></span>
+            </label>
+          </section>
+
+          <button id="loginpage-button">Login</button>
+          <p class="not-a-member">
+            Not a member?
+            <u>
+              <a href="createaccount.html" class="sign-up-link" id="sign-up"
+                >Sign Up
+              </a>
+            </u>
+          </p>
+        </form>
       </section>
-    </main>
-    <footer class="footer">
+    </section>
+  </main>
+  <footer class="footer">
       <!-- Quick Links -->
       <a href="allbooks.html">All Books</a>
       <a href="Buy-a-book-kit.html">Buy a Book Kit</a>
@@ -70,11 +95,8 @@
       <hr class="footer-divider" color="#C6895D" />
 
       <!-- Quote -->
-      <div class="quote">
-        <p>
-          "A room without books is like a body without a soul." - Marcus Tullius
-          Cicero
-        </p>
+      <div id="quote">
+        <p></p>
       </div>
       <!--maybe try to have it change quotes randomly-->
 
@@ -82,6 +104,7 @@
       <div class="copyright">
         <p>&copy; 2023 KitBook. All rights reserved.</p>
       </div>
+      <script src="js/quotesDisplay.js"></script>
     </footer>
   </body>
 </html>
