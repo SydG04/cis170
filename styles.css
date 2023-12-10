@@ -299,9 +299,8 @@ h2 {
   width: 35%;
 }
 
-/* Style for the quote */
-.quote, 
-#quote {
+/* Style for the quote */ 
+#quote p {
   font-style: italic;
   margin: 20px 5px;
   color: beige;
