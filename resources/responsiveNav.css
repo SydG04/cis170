@@ -1,0 +1,117 @@
+/*
+Animated hamburger menu
+https://codepen.io/pranjal9599/pen/yJRNoL
+and
+https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+*/
+@media screen and (max-width: 700px) {
+
+  /*When the screen is less than 700 pixels wide, hide all links,expect for the hamburger icon.
+  Show the link that contains should open and close the #navlist (.icon) */
+  .hamburger-container {
+    display: block;
+  }
+  
+  .myNavList li:not(:first-child) {
+    display: none;
+  }
+
+  .hamburger-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hamburger-icon {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    /* top: 10%; */
+    /* left: 3%; */
+    z-index: 1000;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    background: transparent;
+    }
+  
+    .icon-1, .icon-2, .icon-3 {
+    position: relative;
+    left: 25%;
+    top: 50%;
+    width: 32px;
+    height: 3px;
+    background-color: white;
+    transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
+    }
+  
+    .icon-1 {
+      transform: translateY(-5px);
+      animation-delay: 100ms;
+    }
+  
+    .icon-3 {
+      transform: translateY(5px);
+      animation-delay: 250ms;
+    }
+  
+    .hamburger-icon:hover {
+      transform: scale(1.2);
+    }
+    
+    .icon-1.a {
+      transform: translateY(5px) rotate(45deg);
+    }
+    
+    .icon-3.b {
+      transform: rotate(-45deg);
+    }
+    
+    .icon-2.c {
+      opacity: 0;
+    }
+  
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+/*https://codepen.io/codypearce/pen/PdBXpj*/
+@media screen and (max-width: 700px) {
+  .myNavList.responsive {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background: #99582a;
+  }
+
+.myNavList.responsive li:not(.hamburger-container) {
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+
+@keyframes growDown {
+  0% {
+      transform: scaleY(0);
+  }
+  80% {
+      transform: scaleY(1.1);
+  }
+  100% {
+      transform: scaleY(1);
+  }
+}
+
+
+  .myNavList.responsive .hamburger-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .myNavList.responsive li {
+    display: block;
+  }
+
+
+}

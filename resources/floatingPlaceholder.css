@@ -1,0 +1,79 @@
+
+
+
+/*Form with Custom Floating Placeholder
+Syahrizal
+https://codepen.io/syrizaldev/pen/QWKogPa*/
+.form-control {
+  position: relative;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 15px;
+}
+
+.form-label {
+  position: absolute;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: inherit;
+  left: 1rem;
+  top: 0.75rem;
+  padding: 0 5px;
+  color: slategrey;
+  background: #ffeecc;
+  transition: all 0.3s ease;
+}
+
+.form-input {
+  position: absolute;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: inherit;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  resize: none;
+  width: 100%; /* Updated width to 100% */
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #432818;
+  color: #432818;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  padding: 10px;
+  box-sizing: border-box; 
+}
+
+.form-input::placeholder {
+  opacity: 0;
+  visibility: hidden;
+  color: transparent;
+}
+
+.form-input:focus {
+  outline: none;
+  outline: 2px solid #432818;
+}
+
+.form-input:focus ~ .form-label {
+  top: -0.75rem;
+  left: 1rem;
+  z-index: 5;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #432818;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+  top: -0.75rem;
+  left: 1rem;
+  z-index: 9;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+/*Form with Custom Floating Placeholder
+Syahrizal*/

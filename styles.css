@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&family=Piazzolla:opsz,wght@8..30,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
 
 :root {
   --color-classic: #432818;
@@ -34,6 +35,21 @@
 *::after {
 	text-rendering: optimizeLegibility;
 }
+
+h1 {
+  color: #432818;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #432818;
+  font-size: 3em;
+  text-align: center;
+  margin: 10px;
+}
+
 
 body {
   background-color: #ffeecc;
@@ -94,142 +110,7 @@ a:hover {
   cursor: pointer;
 }
 
-/*
-Animated hamburger menu
-https://codepen.io/pranjal9599/pen/yJRNoL
-and
-https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
-*/
-@media screen and (max-width: 700px) {
 
-  /*When the screen is less than 700 pixels wide, hide all links,expect for the hamburger icon.
-  Show the link that contains should open and close the #navlist (.icon) */
-  .hamburger-container {
-    display: block;
-  }
-  
-  .myNavList li:not(:first-child) {
-    display: none;
-  }
-
-  .hamburger-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .hamburger-icon {
-    position: relative;
-    height: 60px;
-    width: 60px;
-    /* top: 10%; */
-    /* left: 3%; */
-    z-index: 1000;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: all 0.2s ease-in-out;
-    background: transparent;
-    }
-  
-    .icon-1, .icon-2, .icon-3 {
-    position: relative;
-    left: 25%;
-    top: 50%;
-    width: 32px;
-    height: 3px;
-    background-color: white;
-    transition: all 400ms cubic-bezier(.84,.06,.52,1.8);
-    }
-  
-    .icon-1 {
-      transform: translateY(-5px);
-      animation-delay: 100ms;
-    }
-  
-    .icon-3 {
-      transform: translateY(5px);
-      animation-delay: 250ms;
-    }
-  
-    .hamburger-icon:hover {
-      transform: scale(1.2);
-    }
-    
-    .icon-1.a {
-      transform: translateY(5px) rotate(45deg);
-    }
-    
-    .icon-3.b {
-      transform: rotate(-45deg);
-    }
-    
-    .icon-2.c {
-      opacity: 0;
-    }
-  
-}
-
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-/*https://codepen.io/codypearce/pen/PdBXpj*/
-@media screen and (max-width: 700px) {
-  .myNavList.responsive {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    background: #99582a;
-  }
-
-  .myNavList.responsive li:nth-child(2) {
-    transform-origin: top center;
-    animation: slideDown 300ms 60ms ease-in-out forwards;
-  }
-
-  .myNavList.responsive li:nth-child(3) {
-    transform-origin: top center;
-    animation: slideDown 300ms 120ms ease-in-out forwards;
-  }
-
-  .myNavList.responsive li:nth-child(4) {
-    transform-origin: top center;
-    animation: slideDown 300ms 180ms ease-in-out forwards;
-  }
-
-  .myNavList.responsive li:nth-child(5) {
-    transform-origin: top center;
-    animation: slideDown 300ms 240ms ease-in-out forwards;
-  }
-
-  .myNavList.responsive li:nth-child(6) {
-    transform-origin: top center;
-    animation: slideDown 300ms 300ms ease-in-out forwards;
-  }
-
-  @keyframes slideDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-60px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  .myNavList.responsive .hamburger-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-
-  .myNavList.responsive li {
-    display: block;
-  }
-
-
-}
 
 
 #join-today {
@@ -263,20 +144,6 @@ https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
   margin: 52px 50px 50px 100px;
   /*top right bottom left*/
   text-align: center;
-}
-
-h1 {
-  color: #432818;
-  font-size: 4em;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-h2 {
-  color: #432818;
-  font-size: 3em;
-  text-align: center;
-  margin-bottom: 10px;
 }
 
 .welcome_para {
@@ -543,82 +410,6 @@ h2 {
   margin-bottom: 10%;
 }
 
-/*Form with Custom Floating Placeholder
-Syahrizal
-https://codepen.io/syrizaldev/pen/QWKogPa*/
-.form-control {
-  position: relative;
-  width: 100%;
-  height: 3rem;
-  margin-bottom: 15px;
-}
-
-.form-label {
-  position: absolute;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: inherit;
-  left: 1rem;
-  top: 0.75rem;
-  padding: 0 5px;
-  color: slategrey;
-  background: #ffeecc;
-  transition: all 0.3s ease;
-}
-
-.form-input {
-  position: absolute;
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: inherit;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  resize: none;
-  width: 100%; /* Updated width to 100% */
-  height: auto;
-  border-radius: 5px;
-  border: 1px solid #432818;
-  color: #432818;
-  background: transparent;
-  transition: all 0.2s ease-in-out;
-  padding: 10px;
-  box-sizing: border-box; 
-}
-
-.form-input::placeholder {
-  opacity: 0;
-  visibility: hidden;
-  color: transparent;
-}
-
-.form-input:focus {
-  outline: none;
-  outline: 2px solid #432818;
-}
-
-.form-input:focus ~ .form-label {
-  top: -0.75rem;
-  left: 1rem;
-  z-index: 5;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #432818;
-  transition: all 0.2s ease-in-out;
-}
-
-.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
-  top: -0.75rem;
-  left: 1rem;
-  z-index: 9;
-  font-size: 0.875rem;
-  font-weight: 500;
-  transition: all 0.2s ease-in-out;
-}
-/*Form with Custom Floating Placeholder
-Syahrizal*/
 
 .pwrequirements {
   margin: 0;
@@ -860,7 +651,66 @@ input.emptyField {
 }
 
 /*All Books page */
-div {
+/*
+.dropdown-check-list {
+  display: inline-block;
+}
+
+.dropdown-check-list .anchor {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #432818;
+  border-radius: 2px;
+}
+
+/*
+.anchor svg:after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  transform: rotate(-135deg);
+} */
+/*
+
+.dropdown-check-list .anchor:active:after {
+  right: 8px;
+  top: 21%;
+}
+
+.dropdown-check-list ul.genres {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  position: absolute;
+}
+
+.dropdown-check-list ul.genres li {
+  list-style: none;
+}
+
+.dropdown-check-list.visible .genres {
+  display: block;
+}
+
+#filter-and-sort {
+  display: flex;
+  justify-content: right;
+}
+
+#filter-and-sort div {
+  margin-right: 10px;
+}
+
+*/
+.Normal {
   display: block;
 }
 
@@ -981,18 +831,12 @@ h4 {
 }
 
 @media screen and (max-width: 1440px) {
-  h1 {
-    font-size: 2.9rem;
-  }
 
   .allbooks {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 @media screen and (max-width: 970px) {
-  h1 {
-    font-size: 2.9rem;
-  }
 
   .allbooks {
     grid-template-columns: repeat(4, 1fr);
@@ -1000,9 +844,7 @@ h4 {
 }
 
 @media screen and (max-width: 750px) {
-  h1 {
-    font-size: 2.9rem;
-  }
+
 
   .allbooks {
     grid-template-columns: repeat(3, 1fr);
@@ -1032,4 +874,74 @@ h4 {
   font-size: 20px;
   text-align: left;
   margin: 10px;
+}
+
+/*Author Events*/
+.as-headers {
+ text-align: center;
+}
+
+.as-headers h1 {
+  font-family: 'Piazzolla', serif;
+}
+
+.as-headers p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+}
+
+#as-details {
+  display: flex;
+  justify-content: center;
+  color: #432818;
+}
+
+#as-details div {
+  padding-right: 10px;
+}
+
+#as-facts h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#as-facts p {
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+#author-spotlight-container {
+  font-family: 'Piazzolla', serif;
+}
+
+#author-spotlight-container {
+  margin: 10px;
+}
+
+#authors-pic {
+  object-fit: fill;
+}
+
+@media screen and (max-width: 700px) {
+  #as-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #as-details div {
+    padding-top: 10px;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #authors-pic {
+    width: 100%;
+  }
+}
+
+.hidden {
+  display: none;
 }

@@ -4,6 +4,7 @@
         <title>KitBook</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="resources/responsiveNav.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <header>
@@ -26,6 +27,7 @@
           <li><a href="Buy-a-book-kit.html">Buy a Book Kit</a></li>
           <li><a href="#">Our Company</a></li>
           <li><a href="login.html">Log-In/Sign-Up</a></li>
+          <li><a href="featuredAuthor.html">Featured Author</a></li>
         </ul>
         <script src="js/responsiveNav.js"></script>
       </nav>
@@ -35,6 +37,58 @@
         <section class="allbooksheading">
           <h1>Look At What We Have!</h1>
         </section>
+        <!--
+          <section id="filter-and-sort">
+            <div id="list1" class="dropdown-check-list" tabindex="100">
+              <span class="anchor">
+                Filter
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="#432818"><path d="M400-240v-80h160v80H400ZM240-440v-80h480v80H240ZM120-640v-80h720v80H120Z"/></svg>
+              </span>
+            
+              <ul class="genres">
+                <li><input type="checkbox" />Classic</li>
+                <li><input type="checkbox" />YA (Young Adult)</li>
+                <li><input type="checkbox" />Romance</li>
+                <li><input type="checkbox" />Fantasy</li>
+                <li><input type="checkbox" />Sci-Fi</li>
+                <li><input type="checkbox" />Mystery</li>
+                <li><input type="checkbox" />Thriller</li>
+                <li><input type="checkbox" />Historical</li>
+                <li><input type="checkbox" />Contemporary</li>
+                <li><input type="checkbox" />Literary</li>
+                <li><input type="checkbox" />Adventure</li>
+                <li><input type="checkbox" />Horror</li>
+                <li><input type="checkbox" />Dystopian</li>
+                <li><input type="checkbox" />Graphic</li>
+                <li><input type="checkbox" />Memoir</li>
+                <li><input type="checkbox" />Biography</li>
+                <li><input type="checkbox" />Self-Help</li>
+                <li><input type="checkbox" />Nonfiction</li>
+                <li><input type="checkbox" />Poetry</li>
+                <li><input type="checkbox" />Humor</li>
+                <li><input type="checkbox" />Suspense</li>
+                <li><input type="checkbox" />Crime</li>
+                <li><input type="checkbox" />Paranormal</li>
+                <li><input type="checkbox" />Science</li>
+                <li><input type="checkbox" />Philosophy</li>
+                <li><input type="checkbox" />Satire</li>
+              </ul>
+              
+            </div>
+            <script src="js\filter-dropdown.js"></script>
+
+            <div id="sort">
+              <label for="sort">Sort by:</label>
+              <select name="sort" id="sort">
+                <option value="">-- Select an option --</option>
+                <option value="alphabet-asc">Alphabetical Order (A-Z)</option>
+                <option value="alphabet-desc">Alphabetical Order (Z-A)</option>
+                <option value="popularity">Popularity</option>
+              </select>
+            </div>
+          </section>
+          -->
+          
         <div class = "Normal">
           <section class="allbooks">
             <!--1st book-->
@@ -175,24 +229,25 @@
       <footer class="footer">
         <!-- Quick Links -->
         <a href="allbooks.html">All Books</a>
-      <a href="Buy-a-book-kit.html">Buy a Book Kit</a>
-      <a href="#">Our Company</a>
-      <a href="login.html">Log-In/Sign-Up</a>
-
-      <hr class="footer-divider" color="#C6895D" />
-
-      <!-- Quote -->
-      <div id="quote">
-        <p></p>
-      </div>
-      <!--maybe try to have it change quotes randomly-->
-
-      <!-- Copyright Disclaimer -->
-      <div class="copyright">
-        <p>&copy; 2023 KitBook. All rights reserved.</p>
-      </div>
-      <script src="js/quotesDisplay.js"></script>
-    </footer>
+        <a href="Buy-a-book-kit.html">Buy a Book Kit</a>
+        <a href="#">Our Company</a>
+        <a href="login.html">Log-In/Sign-Up</a>
+        <a href="featuredAuthor.html">Feature Authors</a>
+  
+        <hr class="footer-divider" color="#C6895D" />
+  
+        <!-- Quote -->
+        <div id="quote">
+          <p></p>
+        </div>
+        <!--maybe try to have it change quotes randomly-->
+  
+        <!-- Copyright Disclaimer -->
+        <div class="copyright">
+          <p>&copy; 2023 KitBook. All rights reserved.</p>
+        </div>
+        <script src="js/quotesDisplay.js"></script>
+      </footer>
   </body>
 </html>
 

@@ -33,30 +33,33 @@
   </nav>
   <body>
     <main>
-      <section class="subscribe-box">
-        <h1 id="plan-text">Choose a plan that fits you!</h1>
-        <p id="subscribe-text">
-          Each plan can be set to ship monthly or quarterly.
-        </p>
-        <section class="subscribe-plans">
-          <section id="book1">
-            <h2 class="book-sub-heading">1 Book</h2>
-            <p class="price">$16.99</p>
-            <button class="sub-button">Choose Plan</button>
-          </section>
-          <section id="book2">
-            <h2 class="book-sub-heading">2 Books</h2>
-            <p class="price">$36.99</p>
-            <button class="sub-button">Choose Plan</button>
-          </section>
-          <section id="book3">
-            <h2 class="book-sub-heading">3 Books</h2>
-            <p class="price">$54.99</p>
-            <button class="sub-button">Choose Plan</button>
-          </section>
-        </section>
+      <div class="as-headers">
+        <h1>Author Spotlight</h1>
+        <p>Discover Literary Gems: Author Spotlight of the Month - From Timeless Classics to Contemporary Voices</p>
+      </div>
+      <section id="author-spotlight-container">
+        <div id="as-details">
+          <div id="as-img-container">
+            <img src='https://placehold.it/300x450' alt='Featured author photo' id="authors-pic">
+          </div>
+          <div id="as-facts">
+            <h2 id="authors-name">Authors Name</h2>
+            <p id="authors-bio">Bio</p>
+            <h3>Date Of Birth</h3>
+            <p id="authors-dob">DOB</p>
+            <h3>Popular Work</h3>
+            <p id="popular-work">Popular Work</p>
+            <h3>Other Works</h3>
+            <ul id="other-work">
+            </ul>
+            <script src="js/authorEventsAPI.js"></script>
+          </div>
+        </div>
       </section>
     </main>
+
+
+
     <footer class="footer">
       <!-- Quick Links -->
       <a href="allbooks.html">All Books</a>
@@ -81,3 +84,5 @@
     </footer>
   </body>
 </html>
+
+
