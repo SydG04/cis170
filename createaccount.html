@@ -53,6 +53,7 @@
             method="get"
             name="contact"
             class="contact-inform form"
+            novalidate
           >
             <h1 class="signup-heading">BECOME A MEMBER!</h1>
             <div class="form-control">
@@ -85,8 +86,9 @@
                 class="form-input"
                 placeholder="none"
               />
-              <label for="email" class="form-label">Email</label>
+              <label for="email" class="form-label invalid">Email</label>
             </div>
+            <p id="emailStatus"></p>
 
             <div class="form-control">
               <input

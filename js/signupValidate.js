@@ -10,8 +10,10 @@ var fname = document.getElementById("fname");
 var lname = document.getElementById("lname");
 var email = document.getElementById("email");
 var requirements = document.querySelector(".pwrequirements");
+var emailStatus = document.getElementById("emailStatus");
 
 //event listeners
+email.addEventListener("input", validateEmail);
 password.addEventListener("keyup", validatePassword);
 form.addEventListener("submit", validateForm);
 
@@ -26,6 +28,10 @@ function validateForm(event) {
   }
     
   if(!validatePassword()) {
+    formValid = false;
+  }
+
+  if (validateEmail()) {
     formValid = false;
   }
 
@@ -139,4 +145,21 @@ function validatePassword() {
 /*Try to see if you can make it have a  smooth dropdown animation */
 function showPWRequirements(password) {
   requirements.style.display = password.length > 0 ? "none" : "block";
+}
+
+function validateEmail() {
+  let formValid = true;
+
+  if (/[^@]+@[^@]+/.test(email.value)) {
+    email.classList.remove("emptyField");
+    emailStatus.textContent = "";
+   
+  } else {
+    emailStatus.textContent = "Invalid Email";
+    email.classList.add("emptyField");
+    formValid = false;
+  }
+  
+  console.log("Email: " + formValid);
+  return formValid;
 }

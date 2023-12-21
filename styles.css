@@ -887,6 +887,8 @@ h4 {
 
 .as-headers p {
   font-family: 'Dosis', sans-serif;
+  color: #432818;
+  font-weight: 500;
   font-size: 20px;
 }
 
@@ -923,6 +925,18 @@ h4 {
   object-fit: fill;
 }
 
+#emailStatus {
+  color: red;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
   #as-details {
     display: flex;
@@ -942,6 +956,3 @@ h4 {
   }
 }
 
-.hidden {
-  display: none;
-}
