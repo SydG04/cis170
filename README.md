@@ -7,11 +7,12 @@ KitBook is an e-commerce mockup of a book subscription website. It is a website 
 ![CSS](https://github.com/SydG04/cis170/assets/113223819/dd051432-75c0-4b55-b8ce-e849c1493394)
 ![Javascript](https://github.com/SydG04/cis170/assets/113223819/2c9a36a5-79f5-4f60-9b68-3e549a17c64d)
 
-## Current Goals
+## Current Goals/To-Do List
 - Add the API to the All Books page so when a user clicks on a book, they get a **description, rating, and reviews**. I will remove the other API I used on the Feature Authors page when I add this.
 - Considering changing the font and still trying to figure it out. If not, then I will make the fonts more consistent.
 - I MAY use LESS. Not sure
 - Cleanup the HTML and CSS rookie mistakes
+- Add some automation via php
 
 ### Attributions for Images
 [Flatart](https://www.iconfinder.com/Flatart)
