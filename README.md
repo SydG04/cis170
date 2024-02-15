@@ -9,4 +9,10 @@ KitBook is an e-commerce mockup of a book subscription website. It is a website 
 
 ## Current Goals
 - Add the API to the All Books page so when a user clicks on a book, they get a **description, rating, and reviews**. I will remove the other API I used on the Feature Authors page when I add this.
-- Considering changing the font and still trying to figure it out. If not, then I will make the fonts more consistent. 
+- Considering changing the font and still trying to figure it out. If not, then I will make the fonts more consistent.
+- I MAY use LESS. Not sure
+- Cleanup the HTML and CSS rookie mistakes
+
+### Attributions for Images
+[Flatart](https://www.iconfinder.com/Flatart)
+[Pixel Bazaar](https://www.iconfinder.com/pixelbazaar)
