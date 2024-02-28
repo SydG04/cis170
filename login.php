@@ -17,9 +17,12 @@ require_once("php/header.php");
           <label for="email" class="form-label">Email</label>
         </div>
 
-        <div class="form-control">
+        <div class="form-control password-box">
           <input id="password" type="password" name="password" class="form-input" placeholder="none" />
           <label for="password" class="form-label">Password</label>
+          <button id="showPasswordBtn" aria-label="show password">
+            <img src="assets\Images\svgs\visibility.svg" alt="visible icon">
+          </button>
         </div>
 
         <section class="remember-me-container">
@@ -34,7 +37,7 @@ require_once("php/header.php");
         <p class="not-a-member">
           Not a member?
           <u>
-            <a href="createaccount.html" class="sign-up-link" id="sign-up">Sign Up
+            <a href="createaccount.php" class="sign-up-link" id="sign-up">Sign Up
             </a>
           </u>
         </p>

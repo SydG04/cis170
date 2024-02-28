@@ -433,6 +433,11 @@ input.emptyField {
   color: red;
 }
 
+.password-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* Hide the browser's default checkbox */
 .check-container input[type="checkbox"] {
   display: none;
