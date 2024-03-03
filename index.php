@@ -4,7 +4,7 @@ require_once("php/header.php");
 <main>
   <section class="intro">
     <aside class="welcome_image">
-      <img src="Images/Reading.jpg" alt="Book covering a woman's face" class="reading_book" />
+      <img src="assets/Images/Reading.jpg" alt="Book covering a woman's face" class="reading_book" />
     </aside>
     <section class="welcome_text">
       <aside>

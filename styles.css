@@ -214,17 +214,15 @@ a:hover {
   color: #432818;
 }
 
-.flex-container {
+/*.flex-container {
   display: flex;
-  justify-content: space-evenly;
-}
+}*/
 
 #a-note-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 20px;
-  column-gap: 6em;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 30px;
+  justify-content: space-around;
 }
 
 .post-it {
@@ -236,7 +234,7 @@ a:hover {
   display: inline-block;
   height: 30px;
   width: 29px;
-  background-image: url(Images/post-it.svg);
+  background-image: url(assets/svgs/post-it.svg);
 }
 
 .bookmark {
@@ -246,9 +244,9 @@ a:hover {
 .bookmark::before {
   content: "";
   display: inline-block;
-  height: 30px;
-  width: 32px;
-  background-image: url(Images/bookmark-bar-icon.svg);
+  height: 28px;
+  width: 30px;
+  background-image: url(assets/svgs/bookmark-bar-icon.svg);
 }
 
 .highlighter {
@@ -260,7 +258,7 @@ a:hover {
   display: inline-block;
   height: 28px;
   width: 31px;
-  background-image: url(Images/highlight-marker-icon.svg);
+  background-image: url(assets/svgs/highlight-marker-icon.svg);
 }
 
 .pen {
@@ -272,7 +270,7 @@ a:hover {
   display: inline-block;
   height: 32px;
   width: 30px;
-  background-image: url(Images/pen-tool-icon.svg);
+  background-image: url(assets/svgs/pen-tool-icon.svg);
 }
 
 .footer {
@@ -358,10 +356,13 @@ a:hover {
   */
 
   #a-note-list {
-    list-style: none;
+    /*list-style: none;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 20px;
+    grid-row-gap: 20px;*/
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
 
   .footer a {
@@ -436,6 +437,16 @@ input.emptyField {
 .password-box {
   display: flex;
   justify-content: flex-end;
+}
+
+#showPasswordBtn {
+  z-index: 999;
+  background-color: transparent;
+  border: none;
+}
+
+#showPasswordBtn:hover {
+  cursor: pointer;
 }
 
 /* Hide the browser's default checkbox */

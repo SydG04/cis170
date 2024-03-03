@@ -6,7 +6,7 @@ require_once("php/header.php");
     <!--rename to sign-up box-->
     <!--<section class="image-box">-->
     <aside class="signup-image">
-      <img src="Images/Stack%20of%20books.png" alt="Stack of books" class="stack_of_books" />
+      <img src="assets/Images/Stack%20of%20books.png" alt="Stack of books" class="stack_of_books" />
     </aside>
     <!-- </section> -->
     <section class="signup">
@@ -28,9 +28,12 @@ require_once("php/header.php");
         </div>
         <p id="emailStatus"></p>
 
-        <div class="form-control">
+        <div class="form-control password-box">
           <input id="password" type="password" name="password" class="form-input" placeholder="none" />
           <label for="password" class="form-label">Password</label>
+          <button id="showPasswordBtn" aria-label="show password" onclick="showPassword(event)">
+            <img src="assets/svgs/visibility.svg" alt="visible icon" id="visibilityIcon">
+          </button>
         </div>
 
         <ul class="pwrequirements">
@@ -66,7 +69,7 @@ require_once("php/header.php");
         </p>
 
         <script src="js/signupValidate.js"></script>
-      </form>
+        <script src="js/passwordVisibility.js"></script>      </form>
     </section>
   </section>
 </main>
@@ -77,3 +80,5 @@ require_once("php/footer.php");
 </body>
 
 </html>
+
+<!--rename this page to signup-->

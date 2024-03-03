@@ -62,7 +62,7 @@ require_once("php/header.php");
       <!--1st book-->
       <div class="thebook_div">
         <div class="img_div">
-          <img src="Images/1984.jpg" alt="1984" class="Books"></a>
+          <img src="assets/Images/1984.jpg" alt="1984" class="Books"></a>
         </div>
         <div class="book-inside"></div>
         <div class="label_container">
@@ -78,7 +78,7 @@ require_once("php/header.php");
       <!--2nd book-->
       <div class="thebook_div">
         <div class="img_div">
-          <img src="Images/YN.jpg" alt="Y/N" class="Books"></a>
+          <img src="assets/Images/YN.jpg" alt="Y/N" class="Books"></a>
         </div>
         <div class="label_container">
           <span class="label humor">Humor</span>
@@ -92,7 +92,7 @@ require_once("php/header.php");
       <!--3rd book-->
       <div class="thebook_div">
         <div class="img_div">
-          <img src="Images/451.jpg" alt="Fahrenheit 451" class="Books"></a>
+          <img src="assets/Images/451.jpg" alt="Fahrenheit 451" class="Books"></a>
         </div>
         <div class="label_container">
           <span class="label dystopian">Dystopian</span>
@@ -106,7 +106,7 @@ require_once("php/header.php");
       <!--4th book-->
       <div class="thebook_div">
         <div class="img_div">
-          <img src="Images/Yellowface.jpg" alt="Yellowface" class="Books">
+          <img src="assets/Images/Yellowface.jpg" alt="Yellowface" class="Books">
         </div>
         <div class="book-inside"></div>
         <div class="label_container">
@@ -122,7 +122,7 @@ require_once("php/header.php");
       <!--5th book-->
       <div class="thebook_div">
         <div class="img_div">
-          <img src="Images/LoveHypothesis.jpg" alt="Lovely Hypothesis" class="Books"></a>
+          <img src="assets/Images/LoveHypothesis.jpg" alt="Lovely Hypothesis" class="Books"></a>
         </div>
         <div class="label_container">
           <span class="label romance">Romance</span>
@@ -135,7 +135,7 @@ require_once("php/header.php");
       <!--6th book-->
       <div class="thebook_div">
         <div class="img_div">
-          <img src="Images/OOUIL.jpg" alt="One of Us is Lying" class="Books"></a>
+          <img src="assets/Images/OOUIL.jpg" alt="One of Us is Lying" class="Books"></a>
         </div>
         <div class="label_container">
           <span class="label mystery">Mystery</span>
@@ -150,7 +150,7 @@ require_once("php/header.php");
       <!--7th book-->
       <div class="thebook_div">
         <div class="img_div">
-          <img src="Images/NewKid.jpg" alt="New Kid" class="Books"></a>
+          <img src="assets/Images/NewKid.jpg" alt="New Kid" class="Books"></a>
         </div>
         <div class="label_container">
           <span class="label gn">Graphic Novel</span>
@@ -165,7 +165,7 @@ require_once("php/header.php");
       <!--8th book-->
       <div class="thebook_div">
         <div class="img_div">
-          <img src="Images/HeyKiddo.jpg" alt="Hey Kiddo" class="Books"></a>
+          <img src="assets/Images/HeyKiddo.jpg" alt="Hey Kiddo" class="Books"></a>
         </div>
         <div class="label_container">
           <span class="label gn">Graphic Novel</span>
@@ -180,7 +180,7 @@ require_once("php/header.php");
       <!--9th book-->
       <div class="thebook_div">
         <div class="img_div">
-          <img src="Images/MNC.jpg" alt="Monday's Not Coming" class="Books"></a>
+          <img src="assets/Images/MNC.jpg" alt="Monday's Not Coming" class="Books"></a>
         </div>
         <div class="label_container">
           <span class="label mystery">Mystery</span>
@@ -202,5 +202,5 @@ require_once("php/footer.php");
 </body>
 
 </html>
-
+<!--Automate this page. Create a JSON file-->
 <!--When you have the time, try to reinvent the page by creating a bookshelf-->

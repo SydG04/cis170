@@ -31,7 +31,7 @@ function validateForm(event) {
     formValid = false;
   }
 
-  if (validateEmail()) {
+  if (!validateEmail()) {
     formValid = false;
   }
 
