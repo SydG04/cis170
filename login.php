@@ -40,7 +40,7 @@ require_once("php/header.php");
         <p class="not-a-member">
           Not a member?
           <u>
-            <a href="createaccount.php" class="sign-up-link" id="sign-up">Sign Up
+            <a href="signup.php" class="sign-up-link" id="sign-up">Sign Up
             </a>
           </u>
         </p>

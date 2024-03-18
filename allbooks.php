@@ -1,4 +1,24 @@
 <?php
+  require_once("private/connection.php");
+
+  $dsn = "mysql:host=$host;dbname=$db;";
+  try {
+      $pdo = new PDO($dsn, $user, $pass);
+      echo "Connected to DB Successfully.";
+  } catch (\PDOException $e) {
+      throw new \PDOException($e->getMessage(), (int)$e->getCode());
+  }
+
+  //joins the author adn book table so that the author name is in the books table
+  $results = $pdo->query("SELECT *, CONCAT(authors.first_name,' ', authors.last_name) as author
+  FROM books
+  INNER JOIN authors
+  ON books.author = authors.author_id;");
+  //$genres = $pdo -> query("SELECT genre1, genre2, genre3 FROM books")->fetch(PDO::FETCH_ASSOC);
+
+?>
+
+<?php
 require_once("php/header.php");
 ?>
 <main>
@@ -58,141 +78,44 @@ require_once("php/header.php");
           -->
 
   <div class="Normal">
+    <!--I will create a database and automate all of this.
+    BookID (Primary Key), Title, Author, Genres (max 3), ISBN number (Unique Key), maybe a link to the cover 
+  or once i find a API, I can use the isbn to use the API to display a cover. 
+I can do this with open library.-->
     <section class="allbooks">
-      <!--1st book-->
-      <div class="thebook_div">
-        <div class="img_div">
-          <img src="assets/Images/1984.jpg" alt="1984" class="Books"></a>
-        </div>
-        <div class="book-inside"></div>
-        <div class="label_container">
-          <span class="label classic">Classic</span>
-          <span class="label dystopian">Dystopian</span>
-          <span class="label sci-fi">Sci-fi</span>
-        </div>
-        <div class="thebook_info">
-          <h4>1984</h4>
-          <p class="thebook_info_para">George Orwell</p>
-        </div>
-      </div>
-      <!--2nd book-->
-      <div class="thebook_div">
-        <div class="img_div">
-          <img src="assets/Images/YN.jpg" alt="Y/N" class="Books"></a>
-        </div>
-        <div class="label_container">
-          <span class="label humor">Humor</span>
-          <span class="label thriller">Thriller</span>
-        </div>
-        <div class="thebook_info">
-          <h4>Y/N</h4>
-          <p class="thebook_info_para">Esther Yi</p>
-        </div>
-      </div>
-      <!--3rd book-->
-      <div class="thebook_div">
-        <div class="img_div">
-          <img src="assets/Images/451.jpg" alt="Fahrenheit 451" class="Books"></a>
-        </div>
-        <div class="label_container">
-          <span class="label dystopian">Dystopian</span>
-          <span class="label sci-fi">Sci-fi</span>
-        </div>
-        <div class="thebook_info">
-          <h4>Fahrenheit 451</h4>
-          <p class="thebook_info_para">Ray Bradbury</p>
-        </div>
-      </div>
-      <!--4th book-->
-      <div class="thebook_div">
-        <div class="img_div">
-          <img src="assets/Images/Yellowface.jpg" alt="Yellowface" class="Books">
-        </div>
-        <div class="book-inside"></div>
-        <div class="label_container">
-          <span class="label satire">Satire</span>
-          <span class="label mystery">Mystery</span>
-          <span class="label thriller">Thriller</span>
-        </div>
-        <div class="thebook_info">
-          <h4>Yellowface</h4>
-          <p class="thebook_info_para">R.F. Kuang</p>
-        </div>
-      </div>
-      <!--5th book-->
-      <div class="thebook_div">
-        <div class="img_div">
-          <img src="assets/Images/LoveHypothesis.jpg" alt="Lovely Hypothesis" class="Books"></a>
-        </div>
-        <div class="label_container">
-          <span class="label romance">Romance</span>
-        </div>
-        <div class="thebook_info">
-          <h4>The Love Hypothesis</h4>
-          <p class="thebook_info_para">Ali Hazelwood</p>
-        </div>
-      </div>
-      <!--6th book-->
-      <div class="thebook_div">
-        <div class="img_div">
-          <img src="assets/Images/OOUIL.jpg" alt="One of Us is Lying" class="Books"></a>
-        </div>
-        <div class="label_container">
-          <span class="label mystery">Mystery</span>
-          <span class="label ya">YA</span>
-          <span class="label thriller">Thriller</span>
-        </div>
-        <div class="thebook_info">
-          <h4>One of Us is Lying</h4>
-          <p class="thebook_info_para">Karen M. McManus</p>
-        </div>
-      </div>
-      <!--7th book-->
-      <div class="thebook_div">
-        <div class="img_div">
-          <img src="assets/Images/NewKid.jpg" alt="New Kid" class="Books"></a>
-        </div>
-        <div class="label_container">
-          <span class="label gn">Graphic Novel</span>
-          <span class="label humor">Humor</span>
-          <span class="label ya">YA</span>
-        </div>
-        <div class="thebook_info">
-          <h4>New Kid</h4>
-          <p class="thebook_info_para">Jerry Craft</p>
-        </div>
-      </div>
-      <!--8th book-->
-      <div class="thebook_div">
-        <div class="img_div">
-          <img src="assets/Images/HeyKiddo.jpg" alt="Hey Kiddo" class="Books"></a>
-        </div>
-        <div class="label_container">
-          <span class="label gn">Graphic Novel</span>
-          <span class="label memoir">Memoir</span>
-          <span class="label ya">YA</span>
-        </div>
-        <div class="thebook_info">
-          <h4>Hey Kiddo</h4>
-          <p class="thebook_info_para">Jarrett J. Krosoczka</p>
-        </div>
-      </div>
-      <!--9th book-->
-      <div class="thebook_div">
-        <div class="img_div">
-          <img src="assets/Images/MNC.jpg" alt="Monday's Not Coming" class="Books"></a>
-        </div>
-        <div class="label_container">
-          <span class="label mystery">Mystery</span>
-          <span class="label thriller">Thriller</span>
-          <span class="label ya">YA</span>
-        </div>
-        <div class="thebook_info">
-          <h4>Monday's Not Coming</h4>
-          <p class="thebook_info_para">Tiffany D. Jackson</p>
-        </div>
-      </div>
-    </section>
+    <?php
+      require ("php/genresDictionary.php");
+            foreach ($results as $books)
+            //! I NEED to find an api for the book cover. The links are temporary. I may just have to do google books :(
+            {
+              echo "<div class='thebook_div'>
+              <div class='img_div'>
+                <img src='{$books["cover_url"]}' alt='{$books["title"]}' class='Books'></a>
+              </div>
+              <div class='book-inside'></div>
+              <div class='label_container'>";
+              $genres = array($books['genre1'], $books['genre2'], $books['genre3']);
+
+              //start of the foreach loop for the labels
+              foreach ($genres as $genre) {
+                //convert the abbrv to full name
+                if(isset($genresDictionary[$genre]) and (!empty($genre))) {
+                  $fullGenreName = $genresDictionary[$genre];
+                } 
+                // Only display the genre if it's not empty
+                if (!empty($genre)) {
+                    echo "<span class='label {$genre}'>{$fullGenreName}</span>";
+                }
+            } //end of the foreach loop inside the echo statement
+              
+            echo "</div>
+              <div class='thebook_info'>
+                <h4>{$books["title"]}</h4>
+                <p class='thebook_info_para'>{$books["author"]}</p>
+              </div>
+            </div>";
+            }
+        ?>
   </div>
   </div>
 </main>

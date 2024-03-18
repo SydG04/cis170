@@ -18,10 +18,11 @@ require_once("php/header.php");
           <i>all</i> those problems.
         </p>
         <div class="btn-container">
-          <form action="createaccount.html">
+          <!--This tag may not be semantic. i will change when I find a better one-->
+          <form action="signup.php">
             <button class="btns" id="join-now-btn">Join Now!</button>
           </form>
-          <form action="login.html">
+          <form action="login.php">
             <button class="btns" id="log-in-btn">Log in!</button>
           </form>
         </div>

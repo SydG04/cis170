@@ -64,7 +64,7 @@ require_once("php/header.php");
         <p class="a-member">
           Already have an account?
           <u>
-            <a href="login.html" class="create-account-link"> Log In </a>
+            <a href="login.php" class="create-account-link"> Log In </a>
           </u>
         </p>
 

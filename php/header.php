@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="resources/responsiveNav.css">
     <link rel="stylesheet" href="resources/floatingPlaceholder.css">
+    <link rel="stylesheet" href="resources/genres.css">
+    <link rel="stylesheet" href="resources/bookHover.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
   <body>
