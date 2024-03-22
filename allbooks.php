@@ -4,18 +4,16 @@
   $dsn = "mysql:host=$host;dbname=$db;";
   try {
       $pdo = new PDO($dsn, $user, $pass);
-      echo "Connected to DB Successfully.";
+      echo "Connected to DB Successfully."; //i'll get rid of this at the end
   } catch (\PDOException $e) {
       throw new \PDOException($e->getMessage(), (int)$e->getCode());
   }
 
-  //joins the author adn book table so that the author name is in the books table
+  //joins the author and book table so that the author name is in the books table
   $results = $pdo->query("SELECT *, CONCAT(authors.first_name,' ', authors.last_name) as author
   FROM books
   INNER JOIN authors
   ON books.author = authors.author_id;");
-  //$genres = $pdo -> query("SELECT genre1, genre2, genre3 FROM books")->fetch(PDO::FETCH_ASSOC);
-
 ?>
 
 <?php
@@ -78,22 +76,23 @@ require_once("php/header.php");
           -->
 
   <div class="Normal">
-    <!--I will create a database and automate all of this.
-    BookID (Primary Key), Title, Author, Genres (max 3), ISBN number (Unique Key), maybe a link to the cover 
-  or once i find a API, I can use the isbn to use the API to display a cover. 
-I can do this with open library.-->
     <section class="allbooks">
     <?php
       require ("php/genresDictionary.php");
             foreach ($results as $books)
             //! I NEED to find an api for the book cover. The links are temporary. I may just have to do google books :(
             {
-              echo "<div class='thebook_div'>
-              <div class='img_div'>
-                <img src='{$books["cover_url"]}' alt='{$books["title"]}' class='Books'></a>
-              </div>
-              <div class='book-inside'></div>
-              <div class='label_container'>";
+              
+              echo "
+              <div class='thebook_div'>
+                <div class='img_div'>
+                  <a href='book-details.php?book_id={$books["book_id"]}'>
+                  <img src='{$books["cover_url"]}' alt='{$books["title"]}' class='Books'></a>
+                </div>
+                <div class='book-inside'></div>
+                <div class='label_container'>";
+
+              //creating an array with for the genres
               $genres = array($books['genre1'], $books['genre2'], $books['genre3']);
 
               //start of the foreach loop for the labels
@@ -105,10 +104,11 @@ I can do this with open library.-->
                 // Only display the genre if it's not empty
                 if (!empty($genre)) {
                     echo "<span class='label {$genre}'>{$fullGenreName}</span>";
-                }
+                } //end of foreach loop for labels
             } //end of the foreach loop inside the echo statement
               
-            echo "</div>
+            echo "
+            </div>
               <div class='thebook_info'>
                 <h4>{$books["title"]}</h4>
                 <p class='thebook_info_para'>{$books["author"]}</p>
@@ -125,5 +125,4 @@ require_once("php/footer.php");
 </body>
 
 </html>
-<!--Automate this page. Create a JSON file-->
 <!--When you have the time, try to reinvent the page by creating a bookshelf-->

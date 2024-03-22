@@ -4,6 +4,7 @@
     <title>KitBook</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="styles/book-details.scss?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="resources/responsiveNav.css">
     <link rel="stylesheet" href="resources/floatingPlaceholder.css">
     <link rel="stylesheet" href="resources/genres.css">

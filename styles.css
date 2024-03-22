@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&family=Piazzolla:opsz,wght@8..30,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 /* 
 *I'm gonna sepeprate the styles into css pages. Only because this file is very long. 
 * Or I may do it in components. 
@@ -46,15 +46,20 @@ h1 {
   font-size: 4em;
   text-align: center;
   margin-bottom: 10px;
+  font-family: "Libre Baskerville";
 }
 
 h2 {
   color: #432818;
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
   margin: 10px;
+  font-family: "Libre Baskerville";
 }
 
+p {
+  font-family: Montserrat;
+}
 
 body {
   background-color: #ffeecc;
@@ -302,7 +307,7 @@ a:hover {
   font-style: italic;
   margin: 20px 5px;
   color: beige;
-  font-family: Inter;
+  font-family: Montserrat;
   font-weight: 100;
 }
 
@@ -316,7 +321,7 @@ a:hover {
 
 .copyright p {
   margin: 0;
-  font-family: Inter;
+  font-family: Montserrat;
   font-weight: 100;
   color: #ffe6a7;
 }
@@ -655,9 +660,19 @@ input.emptyField {
 }
 
 /*help with instead of margins to center, I need something else*/
-@media screen and (max-width: 700px) {
+
+/* Extra-small devices (phones) */
+@media screen and (max-width: 599px) {
+  /* CSS rules for extra-small devices */
+}
+
+/*!I need to work on this*/
+/* Small devices (tablets) */
+@media screen and (min-width: 300px) and (max-width: 904px) {
+ 
   .subscribe-plans {
     display: block;
+    margin: 0 20px ;
   }
 
   .sub-button {
@@ -789,7 +804,6 @@ h4 {
 
 .thebook_info_para {
   font-size: inherit;
-  padding: 5px;
   line-height: 1.5;
 }
 
@@ -921,4 +935,5 @@ h4 {
     width: 100%;
   }
 }
+
 
