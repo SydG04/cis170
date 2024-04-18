@@ -22,8 +22,10 @@ if(isset($_GET["book_id"]) && !empty($_GET["book_id"])) {
   WHERE book_id = :book_id");
   $stmt->execute(array(":book_id" => $book_id));
   $book = $stmt->fetch(PDO::FETCH_ASSOC);
+}
 ?>
 
+<!--! I may need to make a json file to hold the descriptions adn possibly rating-->
 <?php
 require_once("php/header.php");
 ?>
@@ -37,21 +39,44 @@ require_once("php/header.php");
   ?>
 </head>
 <body>
-<?php
-  // Display the details of the selected book
-  if ($book) {
-      echo "You selected book with ID: $book_id<br>";
-      echo "Title: " . $book['title'] . "<br>";
-      echo "Author: " . $book['author'] . "<br>";
-      // Display other details of the book
-  } else {
-      echo "Book not found.";
+
+<section id="book-details-container">
+  <?php
+if ($book) {
+  echo"
+  <section id='book-container'>
+  <div class='book-cover-container'>
+    <img src='{$book['cover_url']}' alt='placeholder' style='width:400px; height:auto;' />
+  </div>
+  <button>
+    Add To Cart
+  </button>
+</section>
+
+<section id='book-details'>
+  <h1>{$book['title']}</h1>
+  <h2>{$book['author']}</h2>
+  <div class='ratings'>
+    <p>
+      <span>
+        <img src='assets/svgs/star.svg' alt='gray star' class='filled'>
+        <img src='assets/svgs/star.svg' alt='gray star' class='filled'>
+        <img src='assets/svgs/star.svg' alt='gray star' class='filled'>
+        <img src='assets/svgs/star.svg' alt='gray star'>
+        <img src='assets/svgs/star.svg' alt='gray star'>
+      </span> 3.45/5.00
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate mi sit amet mauris. Dolor sit amet consectetur adipiscing elit duis tristique. Vitae auctor eu augue ut lectus arcu bibendum at varius. Quis ipsum suspendisse ultrices gravida dictum. Praesent semper feugiat nibh sed. Facilisi morbi tempus iaculis urna id volutpat. Blandit turpis cursus in hac habitasse.
+    </p>
+  </div>
+</section>
+  ";
   }
-} else {
-  // Handle case when no book ID is provided
-  echo "No book selected.";
-}
+  
 ?>
+  </section>
+
 
 <?php
 require_once("php/footer.php");

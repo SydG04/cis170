@@ -3,11 +3,12 @@
   <head>
     <title>KitBook</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets\components\navbar.scss?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="styles/book-details.scss?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="assets\components\book-details.scss?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="resources/responsiveNav.css">
     <link rel="stylesheet" href="resources/floatingPlaceholder.css">
-    <link rel="stylesheet" href="resources/genres.css">
+    <link rel="stylesheet" href="assets\components\genres.css">
     <link rel="stylesheet" href="resources/bookHover.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>

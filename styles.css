@@ -53,8 +53,14 @@ h2 {
   color: #432818;
   font-size: 2.5em;
   text-align: center;
-  margin: 10px;
+  margin: 10px 0;
   font-family: "Libre Baskerville";
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 5px;
 }
 
 p {
@@ -83,45 +89,6 @@ body {
   padding: 8px;
   text-align: center;
 }
-
-.hamburger-container {
-  display: none;
-}
-
-.navbar {
-  position: relative;
-  background: #99582a;
-}
-
-#navlist {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  background: #99582a;
-}
-
-#navlist li {
-  flex: auto;
-  text-align: center;
-  padding: 0.3em;
-  font-size: 30px;
-  color: #ffe6a7;
-}
-
-a {
-  color: #ffe6a7;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  text-decoration-color: #6f1d1b;
-  cursor: pointer;
-}
-
-
-
 
 #join-today {
   color: #ffe6a7;
@@ -766,8 +733,6 @@ input.emptyField {
   padding: 5px;
 }
 
-
-
 .Books {
   width: 100%;
 }
@@ -794,12 +759,6 @@ input.emptyField {
   text-align: center;
   font-size: 15px;
   line-height: 1.5;
-}
-
-h4 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 20px 5px;
 }
 
 .thebook_info_para {
@@ -935,5 +894,3 @@ h4 {
     width: 100%;
   }
 }
-
-
