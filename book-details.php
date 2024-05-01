@@ -1,14 +1,5 @@
 <?php
   require_once("private/connection.php");
-
-  $dsn = "mysql:host=$host;dbname=$db;";
-  try {
-      $pdo = new PDO($dsn, $user, $pass);
-      echo "Connected to DB Successfully.";
-  } catch (\PDOException $e) {
-      throw new \PDOException($e->getMessage(), (int)$e->getCode());
-  }
-
  // Retrieve the book ID from the URL query parameters
 if(isset($_GET["book_id"]) && !empty($_GET["book_id"])) {
   $book_id = $_GET["book_id"];

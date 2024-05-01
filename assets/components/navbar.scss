@@ -13,23 +13,23 @@
   padding: 0;
   margin: 0;
   background: #99582a;
-}
 
-#navlist li {
-  flex: auto;
-  text-align: center;
-  padding: 0.3em;
-  font-size: 30px;
-  color: #ffe6a7;
-}
+  li {
+    flex: auto;
+    text-align: center;
+    padding: 0.3em;
+    font-size: 30px;
+    color: #ffe6a7;
 
-a {
-  color: #ffe6a7;
-  text-decoration: none;
-}
+    a {
+      color: #ffe6a7;
+      text-decoration: none;
 
-a:hover {
-  text-decoration: underline;
-  text-decoration-color: #6f1d1b;
-  cursor: pointer;
+      :hover {
+        text-decoration: 5px underline;
+        text-decoration-color: #6f1d1b;
+        cursor: pointer;
+      }
+    }
+  }
 }

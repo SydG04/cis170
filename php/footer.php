@@ -6,7 +6,7 @@
       <a href="login.php">Log-In/Sign-Up</a>
       <a href="featuredAuthor.php">Feature Authors</a>
 
-      <hr class="footer-divider" color="#C6895D" />
+      <hr color="#C6895D" />
 
       <!-- Quote -->
       <div id="quote">

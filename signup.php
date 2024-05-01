@@ -10,7 +10,7 @@ require_once("php/header.php");
     </aside>
     <!-- </section> -->
     <section class="signup">
-      <form id="signup-form" method="get" name="contact" class="contact-inform form" novalidate>
+      <form id="signup-form" method="post" action="private/addAccount.php" class="contact-inform form" novalidate>
         <h1 class="signup-heading">BECOME A MEMBER!</h1>
         <div class="form-control">
           <input id="fname" type="text" name="fname" class="form-input" placeholder="none" />
@@ -68,8 +68,9 @@ require_once("php/header.php");
           </u>
         </p>
 
-        <script src="js/signupValidate.js"></script>
-        <script src="js/passwordVisibility.js"></script>      </form>
+        <script src="js/signupValidate.js?v=<?php echo time();?>"></script>
+        <script src="js/passwordVisibility.js"></script>
+      </form>
     </section>
   </section>
 </main>

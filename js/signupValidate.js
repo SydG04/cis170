@@ -19,7 +19,6 @@ form.addEventListener("submit", validateForm);
 
 //functions
 function validateForm(event) {
-  event.preventDefault();
   let formValid = true;
   let status = document.getElementById("status");
 
@@ -39,6 +38,7 @@ function validateForm(event) {
   if (formValid) {
     status.textContent = "Your account is being created...";
   } else {
+    event.preventDefault();
     status.textContent = "You are missing some requirements";
   }
 }

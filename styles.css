@@ -43,24 +43,29 @@
 
 h1 {
   color: #432818;
-  font-size: 4em;
+  font-size: 3.815rem;
   text-align: center;
   margin-bottom: 10px;
   font-family: "Libre Baskerville";
+  /* letter-spacing: 5px; */
 }
 
 h2 {
   color: #432818;
-  font-size: 2.5em;
+  font-size: 3.052rem;
   text-align: center;
   margin: 10px 0;
-  font-family: "Libre Baskerville";
+  font-family: "Montserrat";
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1.953rem;
   font-weight: bold;
   margin: 20px 5px;
+}
+
+li {
+  font-family: "Libre Baskerville";
 }
 
 p {
@@ -79,6 +84,13 @@ body {
 
 .logo {
   color: #432818;
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: 5px underline;
+  text-decoration-color: #6f1d1b;
+  cursor: pointer;
 }
 
 #CurrentDeal {
@@ -250,48 +262,6 @@ body {
   background-image: url(assets/svgs/pen-tool-icon.svg);
 }
 
-.footer {
-  background-color: #99582a;
-  padding-top: 20px;
-  text-align: center;
-}
-
-/* Style for the quick links */
-.footer a {
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-  font-weight: bold;
-  font-size: large;
-}
-
-.footer-divider {
-  width: 35%;
-}
-
-/* Style for the quote */ 
-#quote {
-  font-style: italic;
-  margin: 20px 5px;
-  color: beige;
-  font-family: Montserrat;
-  font-weight: 100;
-}
-
-.copyright {
-  background-color: #432818;
-  height: 50px;
-  display: flex; /* Make the container a flex container */
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Center vertically */
-}
-
-.copyright p {
-  margin: 0;
-  font-family: Montserrat;
-  font-weight: 100;
-  color: #ffe6a7;
-}
 
 @media screen and (max-width: 700px) {
   .welcome_image {
@@ -741,6 +711,7 @@ input.emptyField {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .label {
@@ -820,12 +791,12 @@ input.emptyField {
  text-align: center;
 }
 
-.as-headers h1 {
+/* .as-headers h1 {
   font-family: 'Piazzolla', serif;
-}
+} */
 
 .as-headers p {
-  font-family: 'Dosis', sans-serif;
+  /* font-family: 'Dosis', sans-serif; */
   color: #432818;
   font-weight: 500;
   font-size: 20px;
@@ -847,14 +818,14 @@ input.emptyField {
 }
 
 #as-facts p {
-  font-family: 'Dosis', sans-serif;
+  /* font-family: 'Dosis', sans-serif; */
   font-size: 20px;
   margin: 0;
 }
 
-#author-spotlight-container {
+/* #author-spotlight-container {
   font-family: 'Piazzolla', serif;
-}
+} */
 
 #author-spotlight-container {
   margin: 10px;
@@ -893,4 +864,19 @@ input.emptyField {
   #authors-pic {
     width: 100%;
   }
+}
+
+.profile-gray-circle {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto;
+}
+
+.profile-picture {
+  width: 75px;
 }

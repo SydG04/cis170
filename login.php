@@ -9,7 +9,7 @@ require_once("php/header.php");
     </aside>
     <!-- </section> -->
     <section class="login">
-      <form id="login-form" method="get" name="contact" class="contact-inform form">
+      <form id="login-form" method="post" action="private/loggedIn.php" name="contact" class="contact-inform form">
         <h1 class="welcome-back">WELCOME BACK!</h1>
 
         <div class="form-control">
@@ -35,8 +35,8 @@ require_once("php/header.php");
             <span class="checkmark"></span>
           </label>
         </section>
-
-        <button id="loginpage-button">Login</button>
+<!--janeD0e!-->
+        <input type="submit" id="loginpage-button" value="Login">
         <p class="not-a-member">
           Not a member?
           <u>

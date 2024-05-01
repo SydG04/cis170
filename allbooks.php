@@ -1,14 +1,6 @@
 <?php
   require_once("private/connection.php");
 
-  $dsn = "mysql:host=$host;dbname=$db;";
-  try {
-      $pdo = new PDO($dsn, $user, $pass);
-      echo "Connected to DB Successfully."; //i'll get rid of this at the end
-  } catch (\PDOException $e) {
-      throw new \PDOException($e->getMessage(), (int)$e->getCode());
-  }
-
   //joins the author and book table so that the author name is in the books table
   $results = $pdo->query("SELECT *, CONCAT(authors.first_name,' ', authors.last_name) as author
   FROM books
