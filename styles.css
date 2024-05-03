@@ -59,7 +59,7 @@ h2 {
 }
 
 h4 {
-  font-size: 1.953rem;
+  font-size: 1.25rem;
   font-weight: bold;
   margin: 20px 5px;
 }
@@ -358,6 +358,11 @@ body {
   margin-bottom: 10%;
 }
 
+.error-message {
+  color: darkred;
+  text-transform: capitalize;
+  padding: 10px;
+}
 
 .pwrequirements {
   margin: 0;
@@ -394,6 +399,20 @@ input.emptyField {
 
 #showPasswordBtn:hover {
   cursor: pointer;
+}
+
+.forgot-password {
+  display: flex;
+}
+
+.forgot-password-link {
+  text-decoration: none;
+  color: darkred;
+  text-align: left;
+}
+
+.forgot-password-link:hover {
+  text-decoration: 1px underline;
 }
 
 /* Hide the browser's default checkbox */

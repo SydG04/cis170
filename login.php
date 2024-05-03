@@ -1,5 +1,6 @@
 <?php
 require_once("php/header.php");
+session_start();
 ?>
 <main>
   <section class="login-box">
@@ -11,7 +12,15 @@ require_once("php/header.php");
     <section class="login">
       <form id="login-form" method="post" action="private/loggedIn.php" name="contact" class="contact-inform form">
         <h1 class="welcome-back">WELCOME BACK!</h1>
-
+        <!-- !This piece of code was taken from: https://phppot.com/php/php-login-form/-->
+          <?php
+          if (isset($_SESSION["errorMessage"])) {
+          ?>
+          <div class="error-message"><?php  echo $_SESSION["errorMessage"]; ?></div>
+          <?php
+              unset($_SESSION["errorMessage"]);
+            }
+          ?>
         <div class="form-control">
           <input id="email" type="email" name="email" class="form-input" placeholder="none" />
           <label for="email" class="form-label">Email</label>
@@ -27,6 +36,10 @@ require_once("php/header.php");
           <script src="js/passwordVisibility.js"></script>
         </div>
 
+        <!--Forgot Password ;)-->
+        <div class="forgot-password">
+          <a href="#" class="forgot-password-link">Forgot Password?</a>
+        </div>
 
         <section class="remember-me-container">
           <label class="check-container">
@@ -35,7 +48,6 @@ require_once("php/header.php");
             <span class="checkmark"></span>
           </label>
         </section>
-<!--janeD0e!-->
         <input type="submit" id="loginpage-button" value="Login">
         <p class="not-a-member">
           Not a member?
