@@ -123,14 +123,14 @@ body {
 .reading_book {
   float: left;
   display: block;
-  margin: 50px 50px 50px 50px;
+  margin: 2em;
   width: 100%;
 }
 
 .welcome_text {
   flex: auto;
   width: 50%;
-  margin: 52px 50px 50px 100px;
+  margin: auto 2em;
   /*top right bottom left*/
   text-align: center;
 }
@@ -145,7 +145,7 @@ body {
   display: flex;
   justify-content: center;
 }
-
+/* * I can probably make this a component. All btns throughout the page*/
 #join-now-btn {
   background-color: #6f1d1b;
   color: #ffeecc;
@@ -169,6 +169,12 @@ body {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+#join-now-btn:active {
+  background-color: #cb6d6b;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
 #log-in-btn {
   background-color: #ffeecc;
   color: #6f1d1b;
@@ -190,6 +196,12 @@ body {
   transition: 0.3s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#log-in-btn:active {
+  background-color: #fff3db;
+  box-shadow: none;
+  transform: translateY(4px);
 }
 
 #second-h1 {
@@ -515,6 +527,13 @@ input.emptyField {
   transition: 0.3s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#loginpage-button:active,
+#CA-button:active {
+  background-color: #cb6d6b;
+  box-shadow: none;
+  transform: translateY(4px);
 }
 
 @media screen and (max-width: 700px) {
