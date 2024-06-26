@@ -67,7 +67,7 @@ require_once("php/header.php");
           </section>
           -->
 
-  <div class="Normal">
+
     <section class="allbooks">
     <?php
       require ("php/genresDictionary.php");
@@ -108,7 +108,7 @@ require_once("php/header.php");
             </div>";
             }
         ?>
-  </div>
+  
   </div>
 </main>
 <?php

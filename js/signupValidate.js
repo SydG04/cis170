@@ -12,6 +12,7 @@ var email = document.getElementById("email");
 var requirements = document.querySelector(".pwrequirements");
 var emailStatus = document.getElementById("emailStatus");
 
+
 //event listeners
 email.addEventListener("input", validateEmail);
 password.addEventListener("keyup", validatePassword);
@@ -45,39 +46,21 @@ function validateForm(event) {
 
 
 function checkEmptyFields() {
+  const fields = [fname, lname, email, password];
   let formValid = true;
-  if (fname.value === "") {
-    fname.classList.add("emptyField");
-    formValid = false;
-  } else {
-    fname.classList.remove("emptyField");
-  }
 
-  if (lname.value === "") {
-    lname.classList.add("emptyField");
-    formValid = false;
-  } else {
-    lname.classList.remove("emptyField");
-  }
+  fields.forEach(field => {
+    if (field.value === "") {
+      field.classList.add("emptyField");
+      formValid = false;
+    } else {
+      field.classList.remove("emptyField");
+    }
+  });
 
-  if (email.value === "") {
-    email.classList.add("emptyField");
-    formValid = false;
-  } else {
-    email.classList.remove("emptyField");
-  }
-
-  if (password.value === "") {
-    password.classList.add("emptyField");
-    formValid = false;
-  } else {
-    password.classList.remove("emptyField");
-  }
-
-    console.log("EF: " + formValid);
-  return formValid
+  console.log("EF: " + formValid);
+  return formValid;
 }
-
 
 function validatePassword() {
   showPWRequirements(password)
