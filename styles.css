@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&family=Piazzolla:opsz,wght@8..30,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+/* 
+*I'm gonna sepeprate the styles into css pages. Only because this file is very long. 
+* Or I may do it in components. 
+* And I may convert to SCSS cause...*/
+/*I may chaneg up the genres. Not sure*/
 :root {
   --color-classic: #432818;
   --color-ya: #bb9457;
@@ -38,18 +43,34 @@
 
 h1 {
   color: #432818;
-  font-size: 4em;
+  font-size: 3.815rem;
   text-align: center;
   margin-bottom: 10px;
+  font-family: "Libre Baskerville";
+  /* letter-spacing: 5px; */
 }
 
 h2 {
   color: #432818;
-  font-size: 3em;
+  font-size: 3.052rem;
   text-align: center;
-  margin: 10px;
+  margin: 10px 0;
+  font-family: "Montserrat";
 }
 
+h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 20px 5px;
+}
+
+li {
+  font-family: "Libre Baskerville";
+}
+
+p {
+  font-family: Montserrat;
+}
 
 body {
   background-color: #ffeecc;
@@ -63,6 +84,13 @@ body {
 
 .logo {
   color: #432818;
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: 5px underline;
+  text-decoration-color: #6f1d1b;
+  cursor: pointer;
 }
 
 #CurrentDeal {
@@ -73,45 +101,6 @@ body {
   padding: 8px;
   text-align: center;
 }
-
-.hamburger-container {
-  display: none;
-}
-
-.navbar {
-  position: relative;
-  background: #99582a;
-}
-
-#navlist {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  background: #99582a;
-}
-
-#navlist li {
-  flex: auto;
-  text-align: center;
-  padding: 0.3em;
-  font-size: 30px;
-  color: #ffe6a7;
-}
-
-a {
-  color: #ffe6a7;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  text-decoration-color: #6f1d1b;
-  cursor: pointer;
-}
-
-
-
 
 #join-today {
   color: #ffe6a7;
@@ -134,14 +123,14 @@ a:hover {
 .reading_book {
   float: left;
   display: block;
-  margin: 50px 50px 50px 50px;
+  margin: 2em;
   width: 100%;
 }
 
 .welcome_text {
   flex: auto;
   width: 50%;
-  margin: 52px 50px 50px 100px;
+  margin: auto 2em;
   /*top right bottom left*/
   text-align: center;
 }
@@ -156,7 +145,7 @@ a:hover {
   display: flex;
   justify-content: center;
 }
-
+/* * I can probably make this a component. All btns throughout the page*/
 #join-now-btn {
   background-color: #6f1d1b;
   color: #ffeecc;
@@ -178,6 +167,12 @@ a:hover {
   transition: 0.3s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#join-now-btn:active {
+  background-color: #cb6d6b;
+  box-shadow: none;
+  transform: translateY(4px);
 }
 
 #log-in-btn {
@@ -203,6 +198,12 @@ a:hover {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+#log-in-btn:active {
+  background-color: #fff3db;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
 #second-h1 {
   font-size: 4em;
   text-align: center;
@@ -214,17 +215,15 @@ a:hover {
   color: #432818;
 }
 
-.flex-container {
+/*.flex-container {
   display: flex;
-  justify-content: space-evenly;
-}
+}*/
 
 #a-note-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 20px;
-  column-gap: 6em;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 30px;
+  justify-content: space-around;
 }
 
 .post-it {
@@ -236,7 +235,7 @@ a:hover {
   display: inline-block;
   height: 30px;
   width: 29px;
-  background-image: url(Images/post-it.svg);
+  background-image: url(assets/svgs/post-it.svg);
 }
 
 .bookmark {
@@ -246,9 +245,9 @@ a:hover {
 .bookmark::before {
   content: "";
   display: inline-block;
-  height: 30px;
-  width: 32px;
-  background-image: url(Images/bookmark-bar-icon.svg);
+  height: 28px;
+  width: 30px;
+  background-image: url(assets/svgs/bookmark-bar-icon.svg);
 }
 
 .highlighter {
@@ -260,7 +259,7 @@ a:hover {
   display: inline-block;
   height: 28px;
   width: 31px;
-  background-image: url(Images/highlight-marker-icon.svg);
+  background-image: url(assets/svgs/highlight-marker-icon.svg);
 }
 
 .pen {
@@ -272,51 +271,9 @@ a:hover {
   display: inline-block;
   height: 32px;
   width: 30px;
-  background-image: url(Images/pen-tool-icon.svg);
+  background-image: url(assets/svgs/pen-tool-icon.svg);
 }
 
-.footer {
-  background-color: #99582a;
-  padding-top: 20px;
-  text-align: center;
-}
-
-/* Style for the quick links */
-.footer a {
-  text-decoration: none;
-  padding: 0 10px;
-  margin: 0 10px;
-  font-weight: bold;
-  font-size: large;
-}
-
-.footer-divider {
-  width: 35%;
-}
-
-/* Style for the quote */ 
-#quote {
-  font-style: italic;
-  margin: 20px 5px;
-  color: beige;
-  font-family: Inter;
-  font-weight: 100;
-}
-
-.copyright {
-  background-color: #432818;
-  height: 50px;
-  display: flex; /* Make the container a flex container */
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Center vertically */
-}
-
-.copyright p {
-  margin: 0;
-  font-family: Inter;
-  font-weight: 100;
-  color: #ffe6a7;
-}
 
 @media screen and (max-width: 700px) {
   .welcome_image {
@@ -358,10 +315,13 @@ a:hover {
   */
 
   #a-note-list {
-    list-style: none;
+    /*list-style: none;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 20px;
+    grid-row-gap: 20px;*/
+    display: flex;
+    flex-direction: column;
+    align-content: center;
   }
 
   .footer a {
@@ -410,6 +370,11 @@ a:hover {
   margin-bottom: 10%;
 }
 
+.error-message {
+  color: darkred;
+  text-transform: capitalize;
+  padding: 10px;
+}
 
 .pwrequirements {
   margin: 0;
@@ -431,6 +396,35 @@ input.emptyField {
 
 .emptyField::placeholder {
   color: red;
+}
+
+.password-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#showPasswordBtn {
+  z-index: 999;
+  background-color: transparent;
+  border: none;
+}
+
+#showPasswordBtn:hover {
+  cursor: pointer;
+}
+
+.forgot-password {
+  display: flex;
+}
+
+.forgot-password-link {
+  text-decoration: none;
+  color: darkred;
+  text-align: left;
+}
+
+.forgot-password-link:hover {
+  text-decoration: 1px underline;
 }
 
 /* Hide the browser's default checkbox */
@@ -535,6 +529,13 @@ input.emptyField {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
+#loginpage-button:active,
+#CA-button:active {
+  background-color: #cb6d6b;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
 @media screen and (max-width: 700px) {
   .login-box, 
   .signup-box {
@@ -634,9 +635,19 @@ input.emptyField {
 }
 
 /*help with instead of margins to center, I need something else*/
-@media screen and (max-width: 700px) {
+
+/* Extra-small devices (phones) */
+@media screen and (max-width: 599px) {
+  /* CSS rules for extra-small devices */
+}
+
+/*!I need to work on this*/
+/* Small devices (tablets) */
+@media screen and (min-width: 300px) and (max-width: 904px) {
+ 
   .subscribe-plans {
     display: block;
+    margin: 0 20px ;
   }
 
   .sub-button {
@@ -710,13 +721,13 @@ input.emptyField {
 }
 
 */
-.Normal {
+/* .All-books-container {
   display: block;
-}
+} */
 
 .allbooks {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-items: center;
   padding: 5px;
   margin: 50px 0;
@@ -730,8 +741,6 @@ input.emptyField {
   padding: 5px;
 }
 
-
-
 .Books {
   width: 100%;
 }
@@ -740,6 +749,7 @@ input.emptyField {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .label {
@@ -754,110 +764,52 @@ input.emptyField {
   font-size: 1em;
 }
 
-.classic {
-  background-color: var(--color-classic);
-  color: white;
-}
-
-.dystopian {
-  background-color: var(--color-dystopian);
-  color: white;
-}
-
-.sci-fi {
-  background-color: var(--color-scifi);
-  color: black;
-}
-
-.humor {
-  background-color: var(--color-humor);
-  color: white;
-}
-
-.thriller {
-  background-color: var(--color-thriller);
-}
-
-.satire {
-  background-color: var(--color-satire);
-  color: white;
-}
-
-.mystery {
-  background-color: var(--color-mystery);
-  color: white;
-}
-
-.romance {
-  background-color: var(--color-romance);
-  color: white;
-}
-
-.ya {
-  background-color: var(--color-ya);
-  color: black;
-}
-
-.gn {
-  background-color: var(--color-graphic);
-  color: white;
-}
-
-.memoir {
-  background-color: var(--color-memoir);
-  color: white;
-}
-
 .thebook_info {
   text-align: center;
   font-size: 15px;
   line-height: 1.5;
 }
 
-h4 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 20px 5px;
-}
-
 .thebook_info_para {
   font-size: inherit;
-  padding: 5px;
   line-height: 1.5;
 }
 
-@media screen and (max-width: 1440px) {
-
+/* Extra-small devices (phones) */
+@media screen and (max-width: 599px) {
   .allbooks {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-@media screen and (max-width: 970px) {
-
-  .allbooks {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media screen and (max-width: 750px) {
-
-
-  .allbooks {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 560px) {
+/* Small devices (tablets) */
+@media screen and (min-width: 600px) and (max-width: 904px) {
   .allbooks {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 450px) {
+/* Medium devices (laptops) */
+@media screen and (min-width: 905px) and (max-width: 1239px) {
   .allbooks {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Large devices (desktops) */
+@media screen and (min-width: 1240px) and (max-width: 1439px) {
+  .allbooks {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Extra-large devices (large desktops) */
+@media screen and (min-width: 1440px) {
+  .allbooks {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 
 /*use goodreads or google api to fetch reviews for the book*/
 
@@ -877,12 +829,12 @@ h4 {
  text-align: center;
 }
 
-.as-headers h1 {
+/* .as-headers h1 {
   font-family: 'Piazzolla', serif;
-}
+} */
 
 .as-headers p {
-  font-family: 'Dosis', sans-serif;
+  /* font-family: 'Dosis', sans-serif; */
   color: #432818;
   font-weight: 500;
   font-size: 20px;
@@ -904,14 +856,14 @@ h4 {
 }
 
 #as-facts p {
-  font-family: 'Dosis', sans-serif;
+  /* font-family: 'Dosis', sans-serif; */
   font-size: 20px;
   margin: 0;
 }
 
-#author-spotlight-container {
+/* #author-spotlight-container {
   font-family: 'Piazzolla', serif;
-}
+} */
 
 #author-spotlight-container {
   margin: 10px;
@@ -952,3 +904,17 @@ h4 {
   }
 }
 
+.profile-gray-circle {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem auto;
+}
+
+.profile-picture {
+  width: 75px;
+}

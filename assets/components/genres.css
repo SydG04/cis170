@@ -1,0 +1,63 @@
+/*classic tag*/
+.CLA {
+  background-color: var(--color-classic);
+  color: white;
+}
+/*dystopian tag*/
+.DYS {
+  background-color: var(--color-dystopian);
+  color: white;
+}
+
+/*sci-fi tag*/
+.SFI {
+  background-color: var(--color-scifi);
+  color: black;
+}
+
+/*humor tag*/
+.HUM {
+  background-color: var(--color-humor);
+  color: white;
+}
+
+/*thriller tag*/
+.THR {
+  background-color: var(--color-thriller);
+}
+
+/*satire tag*/
+.SAT {
+  background-color: var(--color-satire);
+  color: white;
+}
+
+/*mystery tag*/
+.MYS {
+  background-color: var(--color-mystery);
+  color: white;
+}
+
+/*Romance tag*/
+.ROM {
+  background-color: var(--color-romance);
+  color: white;
+}
+
+/*Young Adult tag*/
+.YA {
+  background-color: var(--color-ya);
+  color: black;
+}
+
+/*Graphic Novel tag*/
+.GRA {
+  background-color: var(--color-graphic);
+  color: white;
+}
+
+/*Memoir tag*/
+.MEM {
+  background-color: var(--color-memoir);
+  color: white;
+}
