@@ -1,6 +1,7 @@
 # KitBook
 
 KitBook is an e-commerce mockup of a book subscription website. It is a website project I started in my web development class. I'm still working on it, adding new things when I learn more. 
+Live link: https://www.kitbook.shop/
 
 ## What I used
 ![HTML](https://github.com/SydG04/cis170/assets/113223819/4991ce7a-7b9d-41c6-a4d1-82cd633bb50a)
