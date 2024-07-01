@@ -7,7 +7,7 @@ KitBook is an e-commerce mockup of a book subscription website. It is a website 
 ![CSS](https://github.com/SydG04/cis170/assets/113223819/dd051432-75c0-4b55-b8ce-e849c1493394)
 ![Javascript](https://github.com/SydG04/cis170/assets/113223819/2c9a36a5-79f5-4f60-9b68-3e549a17c64d)
 ![PHP](https://github.com/SydG04/cis170/assets/113223819/e5e658a1-2065-4fef-9b6f-93c1a4ac19f8)
-![MySQL](https://github.com/SydG04/cis170/assets/113223819/ad831f3a-7232-43c2-9621-b5845b86dbc2)
+![MySQL](https://github.com/SydG04/cis170/assets/113223819/d00758d6-3fe1-49bf-b176-030569706245)
 
 ## Current Goals/To-Do List
 - Cleanup the HTML and CSS rookie mistakes
