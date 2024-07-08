@@ -12,6 +12,7 @@ Live link: https://www.kitbook.shop/
 
 ## Current Goals/To-Do List
 - Cleanup the HTML and CSS rookie mistakes
+- Update CSS to SCSS
 - Add the API to the All Books page so when a user clicks on a book, they get a **description, rating, and reviews**. I will remove the other API I used on the Feature Authors page when I add this. (This one makes me want to tear my hair out. If only Goodreads never got rid of their API). 
 
 ### Attributions for Images
