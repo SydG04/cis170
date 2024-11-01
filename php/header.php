@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="assets\components\navbar.scss?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="assets\components\footer.scss?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="styles.scss?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="assets\components\book-details.scss?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="resources/responsiveNav.css">

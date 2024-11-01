@@ -118,12 +118,12 @@ body {
 .welcome_image {
   flex: auto;
   width: 50%;
+  margin: 2em;
 }
 
 .reading_book {
   float: left;
   display: block;
-  margin: 2em;
   width: 100%;
 }
 

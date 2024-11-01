@@ -1,5 +1,5 @@
 <?php
-  require_once("private/connection.php");
+  require_once("./private/connection.php");
  // Retrieve the book ID from the URL query parameters
 if(isset($_GET["book_id"]) && !empty($_GET["book_id"])) {
   $book_id = $_GET["book_id"];
@@ -18,7 +18,7 @@ if(isset($_GET["book_id"]) && !empty($_GET["book_id"])) {
 
 <!--! I may need to make a json file to hold the descriptions adn possibly rating-->
 <?php
-require_once("php/header.php");
+require_once("./php/header.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,7 +70,7 @@ if ($book) {
 
 
 <?php
-require_once("php/footer.php");
+require_once("./php/footer.php");
 ?>
 </body>
 </html>

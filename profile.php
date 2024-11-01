@@ -1,10 +1,10 @@
 <?php
-  require_once("private/connection.php");
+  require_once("./private/connection.php");
   session_start();
 ?>
 
 <?php
-  require_once("php/header.php");
+  require_once("./php/header.php");
 ?>
 
 <main>
@@ -20,5 +20,5 @@
 
 
 <?php
-  require_once("php/footer.php");
+  require_once("./php/footer.php");
 ?>

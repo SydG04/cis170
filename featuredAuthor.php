@@ -1,5 +1,5 @@
     <?php
-    require_once("php/header.php");
+    require_once("./php/header.php");
     ?>
     <main>
       <div class="as-headers">
@@ -27,7 +27,7 @@
       </section>
     </main>
     <?php
-    require_once("php/footer.php");
+    require_once("./php/footer.php");
     ?>
     </body>
 

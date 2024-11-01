@@ -5,7 +5,6 @@
 .navbar {
   position: relative;
   background: #99582a;
-}
 
 #navlist {
   list-style: none;
@@ -20,16 +19,20 @@
     padding: 0.3em;
     font-size: 30px;
     color: #ffe6a7;
-
-    a {
-      color: #ffe6a7;
-      text-decoration: none;
-
-      :hover {
-        text-decoration: 5px underline;
-        text-decoration-color: #6f1d1b;
-        cursor: pointer;
-      }
     }
   }
 }
+
+nav:has(a) {
+  a {
+    color: #ffe6a7;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: 2.5px underline;
+      text-decoration-color: #6f1d1b;
+      cursor: pointer;
+    }
+}
+}
+

@@ -1,5 +1,5 @@
 <?php
-  require_once("private/connection.php");
+  require_once("./private/connection.php");
 
   //joins the author and book table so that the author name is in the books table
   $results = $pdo->query("SELECT *, CONCAT(authors.first_name,' ', authors.last_name) as author

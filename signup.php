@@ -1,5 +1,5 @@
 <?php
-require_once("php/header.php");
+require_once("./php/header.php");
 ?>
 <main>
   <section class="signup-box">
@@ -76,7 +76,7 @@ require_once("php/header.php");
 </main>
 
 <?php
-require_once("php/footer.php");
+require_once("./php/footer.php");
 ?>
 </body>
 

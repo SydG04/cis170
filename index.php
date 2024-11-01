@@ -1,5 +1,5 @@
 <?php
-require_once("php/header.php");
+require_once("./php/header.php");
 ?>
 <main>
   <section class="intro">
@@ -46,7 +46,7 @@ require_once("php/header.php");
   </section>
 </main>
 <?php
-require_once("php/footer.php");
+require_once("./php/footer.php");
 ?>
 </body>
 

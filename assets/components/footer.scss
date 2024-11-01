@@ -3,35 +3,49 @@
   padding-top: 20px;
   text-align: center;
 
-  a {
-    text-decoration: none;
-    padding: 0 10px;
-    margin: 0 10px;
-    font-weight: bold;
-    font-size: large;
-    color: #ffe6a7;
+  .quick-links {
+    display: flex;
+    justify-content: space-evenly;
+    a {
+      font-weight: bold;
+      font-size: large;
+      color: #ffe6a7;
+    }
 
   }
-  
+
+  #myLinkedin {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffe6a7;
+    padding: 0 0.2em;
+
+    &:hover {
+      color: #99582a;
+    }
+  }
+
   hr {
     width: 35%;
   }
 
-  /* Style for the quote */ 
+  /* Style for the quote */
   #quote {
-  font-style: italic;
-  margin: 20px 5px;
-  color: beige;
-  font-family: Montserrat;
-  font-weight: 100;
+    font-style: italic;
+    margin: 20px 5px;
+    color: beige;
+    font-family: Montserrat;
+    font-weight: 100;
   }
 
   .copyright {
     background-color: #432818;
-    height: 50px;
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 0.25rem;
 
     p {
       margin: 0;
@@ -39,5 +53,4 @@
       color: #ffe6a7;
     }
   }
-  
 }

@@ -1,5 +1,5 @@
 <?php
-require_once("php/header.php");
+require_once("./php/header.php");
 session_start();
 ?>
 <main>
@@ -43,7 +43,7 @@ session_start();
 
         <section class="remember-me-container">
           <label class="check-container">
-            <input type="checkbox" class="remember-me" />
+            <input type="checkbox" class="remember-me" name="remember_me"/>
             Remember Me
             <span class="checkmark"></span>
           </label>
@@ -61,7 +61,7 @@ session_start();
   </section>
 </main>
 <?php
-require_once("php/footer.php");
+require_once("./php/footer.php");
 ?>
 </body>
 
